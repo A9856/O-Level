@@ -8,9 +8,609 @@
 </head>
 
 <body>
+    <pre>
+         Object-Oriented Programming (OOP)--:
+            
+            Object-Oriented Programming ek programming technique hai jisme data aur functions ko objects ke roop me organize kiya jata hai।
+            JavaScript me:
+            •	Object create kar sakte hain ..
+            •	Properties aur Methods use kar sakte hain...
+            •	Inheritance aur Encapsulation jaise OOP concepts support hote hain 
+            
+            Next--:
+            Client-Side Rendering (CSR)
+
+            Client-Side Rendering me webpage ka content browser (client side) par JavaScript ki help se render hota hai।
+
+            Server pehle ek basic HTML file bhejta hai, phir browser JavaScript run karke poora page banata hai।
+
+            *  JavaScript data load karke page me content dikhata hai।
+            *    Flow
+                        Browser Request
+                            ↓
+                        Server HTML + JS bhejta hai
+                            ↓
+                        Browser JS run karta hai
+                            ↓
+                        Page Render hota hai
+
+            Example
+
+            React.js application
+
+            <div id="root"></div>
+
+            JavaScript data load karke page me content dikhata hai।
+
+          
+            Advantages--:
+
+            ✔ Fast page navigation
+            ✔ Better user experience
+            ✔ Single Page Application (SPA)
+
+            Disadvantages--:
+
+            First load slow ho sakta hai
+            SEO comparatively weak
+
+            Server-Side Rendering (SSR)
+
+            Server-Side Rendering me webpage ka poora HTML server par generate hota hai aur browser ko ready-made page bheja jata hai।
+
+            Browser ko JavaScript ka wait nahi karna padta।
+
+            *  Flow
+                    Browser Request
+                        ↓
+                    Server HTML Generate karta hai
+                        ↓
+                    Ready HTML Browser ko bhejta hai
+                        ↓
+                    Page Direct Show hota hai
+
+            Example
+
+            Next.js SSR
+
+            export async function getServerSideProps() {
+            return {
+                props: {}
+            };
+            }
+           
+            Advantages--:
+
+                SEO friendly
+                First page load fast
+                Search engines easily content read karte hain
+
+            Disadvantages--:
+
+                Server load badhta hai
+                Har request par page generate hota hai
+
+            ✅ Difference
+            Feature	        Client-Side Rendering	Server-Side Rendering
+            Rendering	        Browser me	            Server me
+            Speed (First Load)	    Slow	            Fast
+            SEO	                    Kam	                Better
+            Example	                React.js	        Next.js SSR
+            Server Load	            Kam	                Jyada
+            
+
+            * Client-Side Rendering (CSR): Page browser me JavaScript ki madad
+              se  render hota hai।
+
+            * Server-Side Rendering (SSR): Page ka HTML server par generate hokar browser ko bheja jata hai।
+
+    java script work profit and loss...
+
+    Tasks Performed with Client-Side Scripts
+    1. Asking the browser to display information
+    javascript Browser ko page pr information display krne ke liye kahta hai. alert ya text show krna.
+    browser javascript se information ko display krne ke liye pochta hai.
+
+    Example:
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+        <script>
+            alert("Welcome Adil");
+        </script>
+    </body>
+
+    </html>
+    2. Example
+    Page pr information display krna
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+        <h2>Display Information</h2>
+        <p id="demo"></p>
+        <script>
+            document.getElementById("demo").innerHTML =
+                "Hello Adil, Welcome to JavaScript";
+        </script>
+    </body>
+
+    </html>
+    3.Example
+    Button click pr information dislaykrna
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+        <h2>Display Information</h2>
+        <button onclick="showInfo()">
+            Click Me
+        </button>
+        <p id="demo"></p>
+        <script>
+            function showInfo() {
+                document.getElementById("demo").innerHTML =
+                    "You clicked the button";
+            }
+        </script>
+    </body>
+
+    </html>
+
+    2. Making the web page different depending on browser and browser features
+    web page ko alg alg browser aur usk features ke anusar bnane ke liye js ka use krte hai.
+
+    Example
+    JavaScript
+    if(navigator.userAgent.includes("Chrome")){
+    alert("You are using Chrome");
+    }
+    Chrome में अलग संदेश दिखेगा।
+    3. Monitoring user events and specifying reactions--:
+    user kya kr rha hai (click, keypress) usae dekhna aur turant response dena.
+    Example
+    HTML
+    <button onclick="hello()">
+        Click Me
+    </button>
+    <script>
+        function hello() {
+            alert("Button Clicked");
+        }
+    </script>
+    4. Generating HTML code for parts of the page
+    JavaScript से नया HTML बनाना।
+    Example
+    JavaScript
+    document.body.innerHTML += "<h2>Hello Adil</h2>";
+    पेज में नया Heading जुड़ जाएगा।
+    5. Modifying a page in response to events
+    मतलब: Event होने पर पेज बदलना।
+    Example
+    HTML
+    <p id="demo">Hello</p>
+
+    <button onclick="changeText()">
+        Change
+    </button>
+
+    <script>
+        function changeText() {
+            document.getElementById("demo").innerHTML = "Welcome";
+        }
+    </script>
+    6. Checking correctness of user input
+    यूज़र का डेटा सही है या नहीं, यह जांचना।
+    Example
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+
+        <h2>Age Validation</h2>
+
+        <button onclick="checkAge()">
+            Check Eligibility
+        </button>
+
+        <script>
+
+            function checkAge() {
+
+                let age = 15;
+
+                if (age < 18) {
+                    alert("Not Eligible");
+                }
+                else {
+                    alert("Eligible");
+                }
+
+            }
+
+        </script>
+
+    </body>
+
+    </html>
+    7. Replacing and updating parts of a page
+    मतलब: पेज के किसी हिस्से को बदलना या अपडेट करना।
+    Example
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+
+        <h2>Price Update Example</h2>
+
+        <p id="price">₹1000</p>
+
+        <button onclick="updatePrice()">
+            Update Price
+        </button>
+
+        <script>
+
+            function updatePrice() {
+                document.getElementById("price").innerHTML = "₹500";
+            }
+
+        </script>
+
+    </body>
+
+    </html>
+    पुरानी कीमत की जगह नई कीमत आ जाएगी।
+    8. Changing the style and position of displayed elements dynamically
+    मतलब: Style या Position को रन टाइम पर बदलना।
+
+    Example
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+
+        <h2>Style Change Example</h2>
+
+        <p id="demo">
+            Hello Adil
+        </p>
+
+        <button onclick="changeColor()">
+            Change Color
+        </button>
+
+        <script>
+
+            function changeColor() {
+                document.getElementById("demo").style.color = "red";
+            }
+
+        </script>
+
+    </body>
+
+    </html>
+    Text लाल हो जाएगा।
+    Client-side scripting can make web pages more dynamic and responsive.
+    Client-side scripting वेबसाइट को ज्यादा Interactive और Fast बनाती है।
+
+    1. Example:
+    Button क्लिक करते ही Result दिख जाए, Server पर जाने की जरूरत न पड़े।
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+
+        <h2>Addition Example</h2>
+
+        <button onclick="showResult()">
+            Show Result
+        </button>
+
+        <p id="demo"></p>
+
+        <script>
+
+            function showResult() {
+
+                let a = 10;
+                let b = 20;
+                let sum = a + b;
+
+                document.getElementById("demo").innerHTML =
+                    "Sum = " + sum;
+
+            }
+
+        </script>
+
+    </body>
+
+    </html>
+    2.Example:
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+
+        <h2>Age Check</h2>
+
+        <input type="number" id="age">
+
+        <button onclick="checkAge()">
+            Check
+        </button>
+
+        <p id="result"></p>
+
+        <script>
+
+            function checkAge() {
+
+                let age =
+                    document.getElementById("age").value;
+
+                if (age >= 18) {
+                    document.getElementById("result").innerHTML =
+                        "Eligible";
+                }
+                else {
+                    document.getElementById("result").innerHTML =
+                        "Not Eligible";
+                }
+
+            }
+
+        </script>
+
+    </body>
+
+    </html>
+    Advantages of Client-Side Scripting (लाभ)
+
+    1. It allows for more interactivity by immediately responding to user's actions
+    यूज़र की Action का तुरंत जवाब देती है।
+    Example
+    Button दबाते ही Alert खुल जाए।
+
+    2. It can perform actions quickly without going to the server
+    Server पर गए बिना काम कर सकती है।
+    Example
+    Form Validation Browser में ही हो जाए।
+
+    3. It is used to send user's requests to the server and also retrieve data from server
+    Server को Request भेज सकती है और Data वापस ला सकती है।
+
+    Example
+    AJAX से Data Fetch करना।
+    JavaScript
+    fetch("data.json")
+
+    4. It is also used to provide remote service for applications such as content delivery and software registration
+    Online Services देने में मदद करती है।
+
+    Example
+    Software Activation, OTP Verification, Content Loading।
+
+    5. It can be substituted with alternative (for example HTML) if user's browsers do not support scripts
+    अगर JavaScript न चले तो HTML से Basic Content दिखाया जा सकता है।
+    Example
+    <!DOCTYPE html>
+    <html>
+
+    <body>
+
+        <h2>Noscript Example</h2>
+
+        <script>
+            document.write("JavaScript is Enabled");
+        </script>
+
+        <noscript>
+            <h3>JavaScript is Disabled</h3>
+        </noscript>
+
+    </body>
+
+    </html>
+    Disadvantages of Client-Side Scripting (हानि)
+
+    1. Not all browsers support scripts
+    हर Browser JavaScript को एक जैसा Support नहीं करता।
+    Example
+    पुराने Browser में कुछ Features न चलें।
+
+    2. Different versions of browser support different type scripts differently
+    Browser के अलग Version अलग तरह से Support देते हैं।
+
+    Example
+    ES6 Code पुराने Browser में Error दे सकता है।
+
+    3. More development time and effort might be required
+    Browser Compatibility के लिए ज्यादा मेहनत करनी पड़ती है।
+
+    Example
+    Chrome, Firefox, Edge सभी में Testing करनी पड़ती है।
+
+    4. Not secure because anyone can look at the code in the page source
+    JavaScript Code यूज़र देख सकता है।
+
+    Example
+    वेबसाइट पर Right Click → View Page Source
+    या
+    Plain text
+    F12 → Developer Tools
+    से JavaScript दिखाई दे जाती है।
+
+    इसलिए Password, Secret Key या Database Information कभी Client-Side JavaScript में नहीं रखनी चाहिए।
+
+
+    DataType 1. Literal Value 2. dynamic Value global and Local 
+    <!-- string literal -->
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+let name = "Adil Khan";
+document.write(name);
+</script>
+
+</body>
+</html> -->
+
+<!-- number literal -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    let marks = 85;
+    document.write(marks);
+</script>
+
+</body>
+</html>
+
+<!-- object literal -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+    let student = {
+        name: "Adil",
+        course: "BCA",
+        marks: 450
+    };
+
+    document.write(student.name);
+</script>
+
+</body>
+</html> 
+
+<!-- Boolean literal -->
+ <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+    let result = true;
+
+    document.write(result);
+
+</script>
+
+</body>
+</html> 
+
+<!-- Boolean False -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+    let isPassed = false;
+
+    document.write(isPassed);
+
+</script>
+
+</body>
+</html> 
+
+<!-- Array literal Example 1 -->
+<!-- Array Literal → Square brackets [] me multiple values store ki jati hain. -->
+ <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+    let fruits = ["Apple", "Mango", "Orange"];
+
+    document.write(fruits);
+
+</script>
+
+</body>
+</html> 
+<!-- Array Literal Example 2 -->
+ <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+    let mark = [80, 75, 90];
+
+    document.write(mark[0]);
+
+</script>
+
+</body>
+</html> 
+
+<!-- local variable -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>
+        <p id="demo"></p>
+        <script>
+            myFun();
+            document.getElementById("demo").innerHTML = "The Address is :" + address;
+            function myFun() {
+                address = "GT Road Prayagraj Uttar Pradesh"
+                document.getElementById("demo").innerHTML = "The Address is :" + address;
+            }
+
+        </script>
+    </h3>
+</body>
+
+</html> 
+
+<!-- global variable -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>
+        <p id="demo"></p>
+
+        var address="Prayagraj Uttar Pradesh"
+        <script>
+            myFun();
+            document.getElementById("demo").innerHTML = "The Address is :" + address;
+            function myFun() {
+                document.getElementById("demo").innerHTML = "The Address is :" + address;
+
+            }
+        </script>
+    </h3>
+</body>
+
+</html>  
+
     JavaScript Operators
     Operator Definition
-
     Operator एक विशेष Symbol होता है जो Variables या Values (Operands) पर कोई Operation करता है।
 
     Example
@@ -20,7 +620,7 @@
     + = Operator
 
 
-    
+
     1. Arithmetic Operators--:
     Arithmetic Operators गणितीय (Mathematical) Calculation करने के लिए उपयोग किए जाते हैं।
 
@@ -157,8 +757,8 @@
     document.write(20 > 10);
     true
 
-    Less Than (<) बाईं ओर की Value दाईं ओर की Value से छोटी है या नहीं Check करता है। document.write(10 < 20); true Greater
-        Than or Equal To (>=)
+    Less Than (<) बाईं ओर की Value दाईं ओर की Value से छोटी है या नहीं Check करता है। document.write(10 < 20); true
+        Greater Than or Equal To (>=)
         बाईं ओर की Value बड़ी या बराबर है या नहीं Check करता है।
         document.write(20 >= 20);
         Output:
@@ -319,7 +919,7 @@
             Add and Assign (+=)
             Value जोड़कर उसी Variable में Store करता है।
             let x = 10;
-            x += 5;     // x=x+5
+            x += 5; // x=x+5
 
             Subtract and Assign (-=)
             Value घटाकर उसी Variable में Store करता है।
@@ -790,7 +1390,7 @@
                 Use :जब Multiple Conditions हों।
 
                 4. Nested if
-                      जब एक if के अंदर दूसरा if लिखा जाता है तो उसे Nested if कहते हैं।
+                जब एक if के अंदर दूसरा if लिखा जाता है तो उसे Nested if कहते हैं।
 
                 Syntax
                 if(condition1)
@@ -884,10 +1484,94 @@
                 Nested if
 
                 एक if Statement के अंदर दूसरा if Statement।
-
                 switch Statement
-
                 किसी Expression की Value के आधार पर विभिन्न Cases में से एक को Execute करने वाला Statement।
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div Class="w3-center w3-panel w3-purple w3-text-white">
+    <p class="w3-sand w3-padding-large w3-xlarge" id="text"></p>
+    </div>
+
+    <script>
+        document.getElementById('text').innerHTML = '<br>' + getfruitcolor('ENGLISH');
+        function getfruitcolor(Books) {
+            var msg;
+            switch (Books) {
+                case 'CCC':
+                    msg = "CCC is the best book of our publication";
+                    break;
+                case 'HINDI':
+                    msg = "HINDI is the our new Book";
+                    break;
+                case 'ENGLISH':
+                    msg = "ENglish is the Our New Book";
+                    break;
+                default:
+                    msg = "Books is Not Available";
+            }
+            return msg;
+        }
+    </script>
+</body>
+</html> 
+
+<!-- Alert Box -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Example Of Alert Box</h1>
+    <button onclick="myfun()">Click IT</button>
+    <script>
+        function myfun() {
+            alert("Hello i am an alert box");
+        }
+    </script>
+</body>
+</html> 
+
+<!-- Confirmation box -->
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Confirmation Alert Box</h1>
+    <button onclick="myconfirmation()">Confirm It</button>
+    <p id="try"></p>
+    <script>
+        function myconfirmation() {
+            var txt;
+            if (confirm("do you want to continue")) {
+                txt = "User want to continue work in this website";
+            }
+            else
+                txt = "User do not want to continue work in this website";
+            document.getElementById("try").innerHTML = txt;
+
+        }
+    </script>
+</body>
+
+</html> 
+            </pre>
 </body>
 
 </html>
