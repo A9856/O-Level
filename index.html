@@ -1487,91 +1487,91 @@
                                             switch Statement
                                             किसी Expression की Value के आधार पर विभिन्न Cases में से एक को Execute करने वाला Statement।
 
-                                            <!DOCTYPE html>
-                                            <html lang="en">
-                                            <head>
-                                                <meta charset="UTF-8">
-                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                                <title>Document</title>
-                                                <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
-                                            </head>
-                                            <body>
-                                                <div Class="w3-center w3-panel w3-purple w3-text-white">
-                                                <p class="w3-sand w3-padding-large w3-xlarge" id="text"></p>
-                                                </div>
+                                        <!DOCTYPE html>
+                                        <html lang="en">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Document</title>
+                                            <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
+                                        </head>
+                                        <body>
+                                            <div Class="w3-center w3-panel w3-purple w3-text-white">
+                                            <p class="w3-sand w3-padding-large w3-xlarge" id="text"></p>
+                                            </div>
 
-                                                <script>
-                                                    document.getElementById('text').innerHTML = '<br>' + getfruitcolor('ENGLISH');
-                                                    function getfruitcolor(Books) {
-                                                        var msg;
-                                                        switch (Books) {
-                                                            case 'CCC':
-                                                                msg = "CCC is the best book of our publication";
-                                                                break;
-                                                            case 'HINDI':
-                                                                msg = "HINDI is the our new Book";
-                                                                break;
-                                                            case 'ENGLISH':
-                                                                msg = "ENglish is the Our New Book";
-                                                                break;
-                                                            default:
-                                                                msg = "Books is Not Available";
-                                                        }
-                                                        return msg;
+                                            <script>
+                                                document.getElementById('text').innerHTML = '<br>' + getfruitcolor('ENGLISH');
+                                                function getfruitcolor(Books) {
+                                                    var msg;
+                                                    switch (Books) {
+                                                        case 'CCC':
+                                                            msg = "CCC is the best book of our publication";
+                                                            break;
+                                                        case 'HINDI':
+                                                            msg = "HINDI is the our new Book";
+                                                            break;
+                                                        case 'ENGLISH':
+                                                            msg = "ENglish is the Our New Book";
+                                                            break;
+                                                        default:
+                                                            msg = "Books is Not Available";
                                                     }
-                                                </script>
-                                            </body>
-                                            </html> 
+                                                    return msg;
+                                                }
+                                            </script>
+                                        </body>
+                                        </html> 
 
-                                            <!-- Alert Box -->
-                                            <!DOCTYPE html>
-                                            <html lang="en">
-                                            <head>
-                                                <meta charset="UTF-8">
-                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                                <title>Document</title>
-                                            </head>
-                                            <body>
-                                                <h1>Example Of Alert Box</h1>
-                                                <button onclick="myfun()">Click IT</button>
-                                                <script>
-                                                    function myfun() {
-                                                        alert("Hello i am an alert box");
+                                        <!-- Alert Box -->
+                                        <!DOCTYPE html>
+                                        <html lang="en">
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Document</title>
+                                        </head>
+                                        <body>
+                                            <h1>Example Of Alert Box</h1>
+                                            <button onclick="myfun()">Click IT</button>
+                                            <script>
+                                                function myfun() {
+                                                    alert("Hello i am an alert box");
+                                                }
+                                            </script>
+                                        </body>
+                                        </html> 
+
+                                        <!-- Confirmation box -->
+                                        <!DOCTYPE html>
+                                        <html lang="en">
+
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Document</title>
+                                        </head>
+
+                                        <body>
+                                            <h1>Confirmation Alert Box</h1>
+                                            <button onclick="myconfirmation()">Confirm It</button>
+                                            <p id="try"></p>
+                                            <script>
+                                                function myconfirmation() {
+                                                    var txt;
+                                                    if (confirm("do you want to continue")) {
+                                                        txt = "User want to continue work in this website";
                                                     }
-                                                </script>
-                                            </body>
-                                            </html> 
+                                                    else
+                                                        txt = "User do not want to continue work in this website";
+                                                    document.getElementById("try").innerHTML = txt;
 
-                                            <!-- Confirmation box -->
-                                            <!DOCTYPE html>
-                                            <html lang="en">
+                                                }
+                                            </script>
+                                        </body>
 
-                                            <head>
-                                                <meta charset="UTF-8">
-                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                                                <title>Document</title>
-                                            </head>
+                                        </html> 
+                                                    </pre>
+                                        </body>
 
-                                            <body>
-                                                <h1>Confirmation Alert Box</h1>
-                                                <button onclick="myconfirmation()">Confirm It</button>
-                                                <p id="try"></p>
-                                                <script>
-                                                    function myconfirmation() {
-                                                        var txt;
-                                                        if (confirm("do you want to continue")) {
-                                                            txt = "User want to continue work in this website";
-                                                        }
-                                                        else
-                                                            txt = "User do not want to continue work in this website";
-                                                        document.getElementById("try").innerHTML = txt;
-
-                                                    }
-                                                </script>
-                                            </body>
-
-                                            </html> 
-                                                        </pre>
-                                            </body>
-
-                                            </html>
+                                        </html>
