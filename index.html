@@ -104,1474 +104,1474 @@
 
             * Server-Side Rendering (SSR): Page ka HTML server par generate hokar browser ko bheja jata hai।
 
-    java script work profit and loss...
-
-    Tasks Performed with Client-Side Scripts
-    1. Asking the browser to display information
-    javascript Browser ko page pr information display krne ke liye kahta hai. alert ya text show krna.
-    browser javascript se information ko display krne ke liye pochta hai.
-
-    Example:
-    <!DOCTYPE html>
-    <html>
-
-    <body>
-        <script>
-            alert("Welcome Adil");
-        </script>
-    </body>
-
-    </html>
-    2. Example
-    Page pr information display krna
-    <!DOCTYPE html>
-    <html>
-
-    <body>
-        <h2>Display Information</h2>
-        <p id="demo"></p>
-        <script>
-            document.getElementById("demo").innerHTML =
-                "Hello Adil, Welcome to JavaScript";
-        </script>
-    </body>
-
-    </html>
-    3.Example
-    Button click pr information dislaykrna
-    <!DOCTYPE html>
-    <html>
-
-    <body>
-        <h2>Display Information</h2>
-        <button onclick="showInfo()">
-            Click Me
-        </button>
-        <p id="demo"></p>
-        <script>
-            function showInfo() {
-                document.getElementById("demo").innerHTML =
-                    "You clicked the button";
-            }
-        </script>
-    </body>
-
-    </html>
-
-    2. Making the web page different depending on browser and browser features
-    web page ko alg alg browser aur usk features ke anusar bnane ke liye js ka use krte hai.
-
-    Example
-    JavaScript
-    if(navigator.userAgent.includes("Chrome")){
-    alert("You are using Chrome");
-    }
-    Chrome में अलग संदेश दिखेगा।
-    3. Monitoring user events and specifying reactions--:
-    user kya kr rha hai (click, keypress) usae dekhna aur turant response dena.
-    Example
-    HTML
-    <button onclick="hello()">
-        Click Me
-    </button>
-    <script>
-        function hello() {
-            alert("Button Clicked");
-        }
-    </script>
-    4. Generating HTML code for parts of the page
-    JavaScript से नया HTML बनाना।
-    Example
-    JavaScript
-    document.body.innerHTML += "<h2>Hello Adil</h2>";
-    पेज में नया Heading जुड़ जाएगा।
-    5. Modifying a page in response to events
-    मतलब: Event होने पर पेज बदलना।
-    Example
-    HTML
-    <p id="demo">Hello</p>
-
-    <button onclick="changeText()">
-        Change
-    </button>
-
-    <script>
-        function changeText() {
-            document.getElementById("demo").innerHTML = "Welcome";
-        }
-    </script>
-    6. Checking correctness of user input
-    यूज़र का डेटा सही है या नहीं, यह जांचना।
-    Example
-    <!DOCTYPE html>
-    <html>
+                                java script work profit and loss...
+
+                                Tasks Performed with Client-Side Scripts
+                                1. Asking the browser to display information
+                                javascript Browser ko page pr information display krne ke liye kahta hai. alert ya text show krna.
+                                browser javascript se information ko display krne ke liye pochta hai.
+
+                                Example:
+                                <!DOCTYPE html>
+                                <html>
+
+                                <body>
+                                    <script>
+                                        alert("Welcome Adil");
+                                    </script>
+                                </body>
+
+                                </html>
+                                2. Example
+                                Page pr information display krna
+                                <!DOCTYPE html>
+                                <html>
+
+                                <body>
+                                    <h2>Display Information</h2>
+                                    <p id="demo"></p>
+                                    <script>
+                                        document.getElementById("demo").innerHTML =
+                                            "Hello Adil, Welcome to JavaScript";
+                                    </script>
+                                </body>
+
+                                </html>
+                                3.Example
+                                Button click pr information dislaykrna
+                                <!DOCTYPE html>
+                                <html>
+
+                                <body>
+                                    <h2>Display Information</h2>
+                                    <button onclick="showInfo()">
+                                        Click Me
+                                    </button>
+                                    <p id="demo"></p>
+                                    <script>
+                                        function showInfo() {
+                                            document.getElementById("demo").innerHTML =
+                                                "You clicked the button";
+                                        }
+                                    </script>
+                                </body>
+
+                                </html>
+
+                                2. Making the web page different depending on browser and browser features
+                                web page ko alg alg browser aur usk features ke anusar bnane ke liye js ka use krte hai.
+
+                                Example
+                                JavaScript
+                                if(navigator.userAgent.includes("Chrome")){
+                                alert("You are using Chrome");
+                                }
+                                Chrome में अलग संदेश दिखेगा।
+                                3. Monitoring user events and specifying reactions--:
+                                user kya kr rha hai (click, keypress) usae dekhna aur turant response dena.
+                                Example
+                                HTML
+                                <button onclick="hello()">
+                                    Click Me
+                                </button>
+                                <script>
+                                    function hello() {
+                                        alert("Button Clicked");
+                                    }
+                                </script>
+                                4. Generating HTML code for parts of the page
+                                JavaScript से नया HTML बनाना।
+                                Example
+                                JavaScript
+                                document.body.innerHTML += "<h2>Hello Adil</h2>";
+                                पेज में नया Heading जुड़ जाएगा।
+                                5. Modifying a page in response to events
+                                मतलब: Event होने पर पेज बदलना।
+                                Example
+                                HTML
+                                <p id="demo">Hello</p>
+
+                                <button onclick="changeText()">
+                                    Change
+                                </button>
+
+                                <script>
+                                    function changeText() {
+                                        document.getElementById("demo").innerHTML = "Welcome";
+                                    }
+                                </script>
+                                6. Checking correctness of user input
+                                यूज़र का डेटा सही है या नहीं, यह जांचना।
+                                Example
+                                <!DOCTYPE html>
+                                <html>
 
-    <body>
+                                <body>
 
-        <h2>Age Validation</h2>
+                                    <h2>Age Validation</h2>
 
-        <button onclick="checkAge()">
-            Check Eligibility
-        </button>
+                                    <button onclick="checkAge()">
+                                        Check Eligibility
+                                    </button>
 
-        <script>
+                                    <script>
 
-            function checkAge() {
+                                        function checkAge() {
 
-                let age = 15;
+                                            let age = 15;
 
-                if (age < 18) {
-                    alert("Not Eligible");
-                }
-                else {
-                    alert("Eligible");
-                }
+                                            if (age < 18) {
+                                                alert("Not Eligible");
+                                            }
+                                            else {
+                                                alert("Eligible");
+                                            }
 
-            }
+                                        }
 
-        </script>
+                                    </script>
 
-    </body>
+                                </body>
 
-    </html>
-    7. Replacing and updating parts of a page
-    मतलब: पेज के किसी हिस्से को बदलना या अपडेट करना।
-    Example
-    <!DOCTYPE html>
-    <html>
+                                </html>
+                                7. Replacing and updating parts of a page
+                                मतलब: पेज के किसी हिस्से को बदलना या अपडेट करना।
+                                Example
+                                <!DOCTYPE html>
+                                <html>
 
-    <body>
+                                <body>
 
-        <h2>Price Update Example</h2>
+                                    <h2>Price Update Example</h2>
 
-        <p id="price">₹1000</p>
+                                    <p id="price">₹1000</p>
 
-        <button onclick="updatePrice()">
-            Update Price
-        </button>
+                                    <button onclick="updatePrice()">
+                                        Update Price
+                                    </button>
 
-        <script>
+                                    <script>
 
-            function updatePrice() {
-                document.getElementById("price").innerHTML = "₹500";
-            }
+                                        function updatePrice() {
+                                            document.getElementById("price").innerHTML = "₹500";
+                                        }
 
-        </script>
+                                    </script>
 
-    </body>
+                                </body>
 
-    </html>
-    पुरानी कीमत की जगह नई कीमत आ जाएगी।
-    8. Changing the style and position of displayed elements dynamically
-    मतलब: Style या Position को रन टाइम पर बदलना।
+                                </html>
+                                पुरानी कीमत की जगह नई कीमत आ जाएगी।
+                                8. Changing the style and position of displayed elements dynamically
+                                मतलब: Style या Position को रन टाइम पर बदलना।
 
-    Example
-    <!DOCTYPE html>
-    <html>
+                                Example
+                                <!DOCTYPE html>
+                                <html>
 
-    <body>
+                                <body>
 
-        <h2>Style Change Example</h2>
+                                    <h2>Style Change Example</h2>
 
-        <p id="demo">
-            Hello Adil
-        </p>
+                                    <p id="demo">
+                                        Hello Adil
+                                    </p>
 
-        <button onclick="changeColor()">
-            Change Color
-        </button>
+                                    <button onclick="changeColor()">
+                                        Change Color
+                                    </button>
 
-        <script>
+                                    <script>
 
-            function changeColor() {
-                document.getElementById("demo").style.color = "red";
-            }
+                                        function changeColor() {
+                                            document.getElementById("demo").style.color = "red";
+                                        }
 
-        </script>
+                                    </script>
 
-    </body>
+                                </body>
 
-    </html>
-    Text लाल हो जाएगा।
-    Client-side scripting can make web pages more dynamic and responsive.
-    Client-side scripting वेबसाइट को ज्यादा Interactive और Fast बनाती है।
+                                </html>
+                                Text लाल हो जाएगा।
+                                Client-side scripting can make web pages more dynamic and responsive.
+                                Client-side scripting वेबसाइट को ज्यादा Interactive और Fast बनाती है।
 
-    1. Example:
-    Button क्लिक करते ही Result दिख जाए, Server पर जाने की जरूरत न पड़े।
-    <!DOCTYPE html>
-    <html>
+                                1. Example:
+                                Button क्लिक करते ही Result दिख जाए, Server पर जाने की जरूरत न पड़े।
+                                <!DOCTYPE html>
+                                <html>
 
-    <body>
+                                <body>
 
-        <h2>Addition Example</h2>
+                                    <h2>Addition Example</h2>
 
-        <button onclick="showResult()">
-            Show Result
-        </button>
+                                    <button onclick="showResult()">
+                                        Show Result
+                                    </button>
 
-        <p id="demo"></p>
+                                    <p id="demo"></p>
 
-        <script>
+                                    <script>
 
-            function showResult() {
+                                        function showResult() {
 
-                let a = 10;
-                let b = 20;
-                let sum = a + b;
+                                            let a = 10;
+                                            let b = 20;
+                                            let sum = a + b;
 
-                document.getElementById("demo").innerHTML =
-                    "Sum = " + sum;
+                                            document.getElementById("demo").innerHTML =
+                                                "Sum = " + sum;
 
-            }
+                                        }
 
-        </script>
+                                    </script>
 
-    </body>
+                                </body>
 
-    </html>
-    2.Example:
-    <!DOCTYPE html>
-    <html>
+                                </html>
+                                2.Example:
+                                <!DOCTYPE html>
+                                <html>
 
-    <body>
+                                <body>
 
-        <h2>Age Check</h2>
+                                    <h2>Age Check</h2>
 
-        <input type="number" id="age">
+                                    <input type="number" id="age">
 
-        <button onclick="checkAge()">
-            Check
-        </button>
+                                    <button onclick="checkAge()">
+                                        Check
+                                    </button>
 
-        <p id="result"></p>
+                                    <p id="result"></p>
 
-        <script>
+                                    <script>
 
-            function checkAge() {
+                                        function checkAge() {
 
-                let age =
-                    document.getElementById("age").value;
+                                            let age =
+                                                document.getElementById("age").value;
 
-                if (age >= 18) {
-                    document.getElementById("result").innerHTML =
-                        "Eligible";
-                }
-                else {
-                    document.getElementById("result").innerHTML =
-                        "Not Eligible";
-                }
+                                            if (age >= 18) {
+                                                document.getElementById("result").innerHTML =
+                                                    "Eligible";
+                                            }
+                                            else {
+                                                document.getElementById("result").innerHTML =
+                                                    "Not Eligible";
+                                            }
 
-            }
+                                        }
 
-        </script>
+                                    </script>
 
-    </body>
+                                </body>
 
-    </html>
-    Advantages of Client-Side Scripting (लाभ)
+                                </html>
+                                Advantages of Client-Side Scripting (लाभ)
 
-    1. It allows for more interactivity by immediately responding to user's actions
-    यूज़र की Action का तुरंत जवाब देती है।
-    Example
-    Button दबाते ही Alert खुल जाए।
+                                1. It allows for more interactivity by immediately responding to user's actions
+                                यूज़र की Action का तुरंत जवाब देती है।
+                                Example
+                                Button दबाते ही Alert खुल जाए।
 
-    2. It can perform actions quickly without going to the server
-    Server पर गए बिना काम कर सकती है।
-    Example
-    Form Validation Browser में ही हो जाए।
+                                2. It can perform actions quickly without going to the server
+                                Server पर गए बिना काम कर सकती है।
+                                Example
+                                Form Validation Browser में ही हो जाए।
 
-    3. It is used to send user's requests to the server and also retrieve data from server
-    Server को Request भेज सकती है और Data वापस ला सकती है।
+                                3. It is used to send user's requests to the server and also retrieve data from server
+                                Server को Request भेज सकती है और Data वापस ला सकती है।
 
-    Example
-    AJAX से Data Fetch करना।
-    JavaScript
-    fetch("data.json")
+                                Example
+                                AJAX से Data Fetch करना।
+                                JavaScript
+                                fetch("data.json")
 
-    4. It is also used to provide remote service for applications such as content delivery and software registration
-    Online Services देने में मदद करती है।
+                                4. It is also used to provide remote service for applications such as content delivery and software registration
+                                Online Services देने में मदद करती है।
 
-    Example
-    Software Activation, OTP Verification, Content Loading।
+                                Example
+                                Software Activation, OTP Verification, Content Loading।
 
-    5. It can be substituted with alternative (for example HTML) if user's browsers do not support scripts
-    अगर JavaScript न चले तो HTML से Basic Content दिखाया जा सकता है।
-    Example
-    <!DOCTYPE html>
-    <html>
+                                5. It can be substituted with alternative (for example HTML) if user's browsers do not support scripts
+                                अगर JavaScript न चले तो HTML से Basic Content दिखाया जा सकता है।
+                                Example
+                                <!DOCTYPE html>
+                                <html>
 
-    <body>
+                                <body>
 
-        <h2>Noscript Example</h2>
+                                    <h2>Noscript Example</h2>
 
-        <script>
-            document.write("JavaScript is Enabled");
-        </script>
+                                    <script>
+                                        document.write("JavaScript is Enabled");
+                                    </script>
 
-        <noscript>
-            <h3>JavaScript is Disabled</h3>
-        </noscript>
+                                    <noscript>
+                                        <h3>JavaScript is Disabled</h3>
+                                    </noscript>
 
-    </body>
+                                </body>
 
-    </html>
-    Disadvantages of Client-Side Scripting (हानि)
+                                </html>
+                                Disadvantages of Client-Side Scripting (हानि)
 
-    1. Not all browsers support scripts
-    हर Browser JavaScript को एक जैसा Support नहीं करता।
-    Example
-    पुराने Browser में कुछ Features न चलें।
+                                1. Not all browsers support scripts
+                                हर Browser JavaScript को एक जैसा Support नहीं करता।
+                                Example
+                                पुराने Browser में कुछ Features न चलें।
 
-    2. Different versions of browser support different type scripts differently
-    Browser के अलग Version अलग तरह से Support देते हैं।
+                                2. Different versions of browser support different type scripts differently
+                                Browser के अलग Version अलग तरह से Support देते हैं।
 
-    Example
-    ES6 Code पुराने Browser में Error दे सकता है।
+                                Example
+                                ES6 Code पुराने Browser में Error दे सकता है।
 
-    3. More development time and effort might be required
-    Browser Compatibility के लिए ज्यादा मेहनत करनी पड़ती है।
+                                3. More development time and effort might be required
+                                Browser Compatibility के लिए ज्यादा मेहनत करनी पड़ती है।
 
-    Example
-    Chrome, Firefox, Edge सभी में Testing करनी पड़ती है।
+                                Example
+                                Chrome, Firefox, Edge सभी में Testing करनी पड़ती है।
 
-    4. Not secure because anyone can look at the code in the page source
-    JavaScript Code यूज़र देख सकता है।
+                                4. Not secure because anyone can look at the code in the page source
+                                JavaScript Code यूज़र देख सकता है।
 
-    Example
-    वेबसाइट पर Right Click → View Page Source
-    या
-    Plain text
-    F12 → Developer Tools
-    से JavaScript दिखाई दे जाती है।
+                                Example
+                                वेबसाइट पर Right Click → View Page Source
+                                या
+                                Plain text
+                                F12 → Developer Tools
+                                से JavaScript दिखाई दे जाती है।
 
-    इसलिए Password, Secret Key या Database Information कभी Client-Side JavaScript में नहीं रखनी चाहिए।
+                                इसलिए Password, Secret Key या Database Information कभी Client-Side JavaScript में नहीं रखनी चाहिए।
 
 
-    DataType 1. Literal Value 2. dynamic Value global and Local 
-    <!-- string literal -->
-<!-- <!DOCTYPE html>
-<html>
-<body>
+                                DataType 1. Literal Value 2. dynamic Value global and Local 
+                                <!-- string literal -->
+                            <!-- <!DOCTYPE html>
+                            <html>
+                            <body>
 
-<script>
-let name = "Adil Khan";
-document.write(name);
-</script>
+                            <script>
+                            let name = "Adil Khan";
+                            document.write(name);
+                            </script>
 
-</body>
-</html> -->
+                            </body>
+                            </html> -->
 
-<!-- number literal -->
-<!DOCTYPE html>
-<html>
-<body>
+                            <!-- number literal -->
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
 
-<script>
-    let marks = 85;
-    document.write(marks);
-</script>
+                            <script>
+                                let marks = 85;
+                                document.write(marks);
+                            </script>
 
-</body>
-</html>
+                            </body>
+                            </html>
 
-<!-- object literal -->
-<!DOCTYPE html>
-<html>
-<body>
+                            <!-- object literal -->
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
 
-<script>
-    let student = {
-        name: "Adil",
-        course: "BCA",
-        marks: 450
-    };
+                            <script>
+                                let student = {
+                                    name: "Adil",
+                                    course: "BCA",
+                                    marks: 450
+                                };
 
-    document.write(student.name);
-</script>
+                                document.write(student.name);
+                            </script>
 
-</body>
-</html> 
+                            </body>
+                            </html> 
 
-<!-- Boolean literal -->
- <!DOCTYPE html>
-<html>
-<body>
+                            <!-- Boolean literal -->
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
 
-<script>
+                            <script>
 
-    let result1 = true;
+                                let result1 = true;
 
-    document.write(result1);
+                                document.write(result1);
 
-</script>
+                            </script>
 
-</body>
-</html> 
+                            </body>
+                            </html> 
 
-<!-- Boolean False -->
-<!DOCTYPE html>
-<html>
-<body>
+                            <!-- Boolean False -->
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
 
-<script>
+                            <script>
 
-    let isPassed = false;
+                                let isPassed = false;
 
-    document.write(isPassed);
+                                document.write(isPassed);
 
-</script>
+                            </script>
 
-</body>
-</html> 
+                            </body>
+                            </html> 
 
-<!-- Array literal Example 1 -->
-<!-- Array Literal → Square brackets [] me multiple values store ki jati hain. -->
- <!DOCTYPE html>
-<html>
-<body>
+                            <!-- Array literal Example 1 -->
+                            <!-- Array Literal → Square brackets [] me multiple values store ki jati hain. -->
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
 
-<script>
+                            <script>
 
-    let fruits = ["Apple", "Mango", "Orange"];
+                                let fruits = ["Apple", "Mango", "Orange"];
 
-    document.write(fruits);
+                                document.write(fruits);
 
-</script>
+                            </script>
 
-</body>
-</html> 
-<!-- Array Literal Example 2 -->
- <!DOCTYPE html>
-<html>
-<body>
+                            </body>
+                            </html> 
+                            <!-- Array Literal Example 2 -->
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
 
-<script>
+                            <script>
 
-    let mark = [80, 75, 90];
+                                let mark = [80, 75, 90];
 
-    document.write(mark[0]);
+                                document.write(mark[0]);
 
-</script>
+                            </script>
 
-</body>
-</html> 
+                            </body>
+                            </html> 
 
-<!-- local variable -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3>
-        <p id="demo"></p>
-        <script>
-            myFun();
-            document.getElementById("demo").innerHTML = "The Address is :" + address;
-            function myFun() {
-                address = "GT Road Prayagraj Uttar Pradesh"
-                document.getElementById("demo").innerHTML = "The Address is :" + address;
-            }
+                            <!-- local variable -->
+                            <!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Document</title>
+                            </head>
+                            <body>
+                                <h3>
+                                    <p id="demo"></p>
+                                    <script>
+                                        myFun();
+                                        document.getElementById("demo").innerHTML = "The Address is :" + address;
+                                        function myFun() {
+                                            address = "GT Road Prayagraj Uttar Pradesh"
+                                            document.getElementById("demo").innerHTML = "The Address is :" + address;
+                                        }
 
-        </script>
-    </h3>
-</body>
+                                    </script>
+                                </h3>
+                            </body>
 
-</html> 
+                            </html> 
 
-<!-- global variable -->
-<!DOCTYPE html>
-<html lang="en">
+                            <!-- global variable -->
+                            <!DOCTYPE html>
+                            <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Document</title>
+                            </head>
 
-<body>
-    <h3>
-        <p id="demo"></p>
+                            <body>
+                                <h3>
+                                    <p id="demo"></p>
 
-        var address="Prayagraj Uttar Pradesh"
-        <script>
-            myFun();
-            document.getElementById("demo").innerHTML = "The Address is :" + address;
-            function myFun() {
-                document.getElementById("demo").innerHTML = "The Address is :" + address;
+                                    var address="Prayagraj Uttar Pradesh"
+                                    <script>
+                                        myFun();
+                                        document.getElementById("demo").innerHTML = "The Address is :" + address;
+                                        function myFun() {
+                                            document.getElementById("demo").innerHTML = "The Address is :" + address;
 
-            }
-        </script>
-    </h3>
-</body>
+                                        }
+                                    </script>
+                                </h3>
+                            </body>
 
-</html>  
+                            </html>  
 
-    JavaScript Operators
-    Operator Definition
-    Operator एक विशेष Symbol होता है जो Variables या Values (Operands) पर कोई Operation करता है।
+                                JavaScript Operators
+                                Operator Definition
+                                Operator एक विशेष Symbol होता है जो Variables या Values (Operands) पर कोई Operation करता है।
 
-    Example
-    10 + 20
-    10 = Operand
-    20 = Operand
-    + = Operator
+                                Example
+                                10 + 20
+                                10 = Operand
+                                20 = Operand
+                                + = Operator
 
 
 
-    1. Arithmetic Operators--:
-    Arithmetic Operators गणितीय (Mathematical) Calculation करने के लिए उपयोग किए जाते हैं।
+                                1. Arithmetic Operators--:
+                                Arithmetic Operators गणितीय (Mathematical) Calculation करने के लिए उपयोग किए जाते हैं।
 
-    Addition Operator (+)
-    दो या अधिक Numbers को जोड़ने के लिए उपयोग किया जाता है।
-    document.write(10 + 20);
-    30
+                                Addition Operator (+)
+                                दो या अधिक Numbers को जोड़ने के लिए उपयोग किया जाता है।
+                                document.write(10 + 20);
+                                30
 
-    Subtraction Operator (-)
-    एक Number से दूसरे Number को घटाने के लिए उपयोग किया जाता है।
-    document.write(20 - 10);
-    10
+                                Subtraction Operator (-)
+                                एक Number से दूसरे Number को घटाने के लिए उपयोग किया जाता है।
+                                document.write(20 - 10);
+                                10
 
-    Multiplication Operator (*)
-    दो Numbers का गुणा करने के लिए उपयोग किया जाता है।
-    document.write(10 * 5);
-    50
+                                Multiplication Operator (*)
+                                दो Numbers का गुणा करने के लिए उपयोग किया जाता है।
+                                document.write(10 * 5);
+                                50
 
-    Division Operator (/)
-    एक Number को दूसरे Number से भाग देने के लिए उपयोग किया जाता है।
-    document.write(20 / 5);
-    4
+                                Division Operator (/)
+                                एक Number को दूसरे Number से भाग देने के लिए उपयोग किया जाता है।
+                                document.write(20 / 5);
+                                4
 
-    Modulus Operator (%)
-    भाग देने के बाद बचा हुआ शेषफल (Remainder) प्राप्त करने के लिए उपयोग किया जाता है।
-    document.write(10 % 3);
-    1
+                                Modulus Operator (%)
+                                भाग देने के बाद बचा हुआ शेषफल (Remainder) प्राप्त करने के लिए उपयोग किया जाता है।
+                                document.write(10 % 3);
+                                1
 
-    Increment Operator (++)
-    Variable की Value में 1 जोड़ता है।
-    let x = 10;
-    x++;
-    document.write(x);
-    11
+                                Increment Operator (++)
+                                Variable की Value में 1 जोड़ता है।
+                                let x = 10;
+                                x++;
+                                document.write(x);
+                                11
 
-    Decrement Operator (--)
-    Variable की Value में 1 घटाता है।
-    let x = 10;
-    x--;
-    document.write(x);
-    9
+                                Decrement Operator (--)
+                                Variable की Value में 1 घटाता है।
+                                let x = 10;
+                                x--;
+                                document.write(x);
+                                9
 
-    Arithmetic Operator
-    <!DOCTYPE html>
-    <html>
+                                Arithmetic Operator
+                                <!DOCTYPE html>
+                                <html>
 
-    <head>
-        <title>JS</title>
-    </head>
+                                <head>
+                                    <title>JS</title>
+                                </head>
 
-    <body>
-        <h4>value a=10,b=5 <br>
-            ==========================</h4>
-        <h4>
-            <script>
-                var a = 10;
-                var b = 5;
-                var c = "test";
-                var l = "</br>";
+                                <body>
+                                    <h4>value a=10,b=5 <br>
+                                        ==========================</h4>
+                                    <h4>
+                                        <script>
+                                            var a = 10;
+                                            var b = 5;
+                                            var c = "test";
+                                            var l = "</br>";
 
-                document.write("a+b=");
-                result = a + b;
-                document.write(result);
+                                            document.write("a+b=");
+                                            result = a + b;
+                                            document.write(result);
 
-                document.write(l);
+                                            document.write(l);
 
-                document.write("a-b=");
-                result = a - b;
-                document.write(result);
-                document.write(l);
+                                            document.write("a-b=");
+                                            result = a - b;
+                                            document.write(result);
+                                            document.write(l);
 
-                document.write("a/b=");
-                result = a / b;
-                document.write(result);
-                document.write(l);
+                                            document.write("a/b=");
+                                            result = a / b;
+                                            document.write(result);
+                                            document.write(l);
 
-                document.write("a%b=");
-                result = a % b;
-                document.write(result);
-                document.write(l);
+                                            document.write("a%b=");
+                                            result = a % b;
+                                            document.write(result);
+                                            document.write(l);
 
-                document.write("a+b+c = ");
-                result = a + b + c;
-                document.write(result);
+                                            document.write("a+b+c = ");
+                                            result = a + b + c;
+                                            document.write(result);
 
-                document.write(l);
+                                            document.write(l);
 
-                a = ++a;
-                document.write(a);
-                document.write(l);
-                document.write("++a = ");
-                result = ++a;
-                document.write(result);
-                document.write(l);
+                                            a = ++a;
+                                            document.write(a);
+                                            document.write(l);
+                                            document.write("++a = ");
+                                            result = ++a;
+                                            document.write(result);
+                                            document.write(l);
 
-                b = --b;
-                document.write(b);
-                document.write(l);
-                document.write("--b = ");
-                result = --b;
-                document.write(result);
-                document.write(l)
-            </script>
-        </h4>
-    </body>
+                                            b = --b;
+                                            document.write(b);
+                                            document.write(l);
+                                            document.write("--b = ");
+                                            result = --b;
+                                            document.write(result);
+                                            document.write(l)
+                                        </script>
+                                    </h4>
+                                </body>
 
-    </html>
+                                </html>
 
-    2. Comparison Operators
-    Comparison Operators दो Values की तुलना (Compare) करते हैं और Result में true या false देते हैं।
+                                2. Comparison Operators
+                                Comparison Operators दो Values की तुलना (Compare) करते हैं और Result में true या false देते हैं।
 
-    Equal To (==)
-    दो Values बराबर हैं या नहीं Check करता है।
-    document.write(10 == "10");
-    true
+                                Equal To (==)
+                                दो Values बराबर हैं या नहीं Check करता है।
+                                document.write(10 == "10");
+                                true
 
-    Identical / Strict Equal (===)
-    Value और Data Type दोनों बराबर हैं या नहीं Check करता है।
-    document.write(10 === "10");
-    false
+                                Identical / Strict Equal (===)
+                                Value और Data Type दोनों बराबर हैं या नहीं Check करता है।
+                                document.write(10 === "10");
+                                false
 
-    Not Equal (!=)
-    दो Values बराबर नहीं हैं या नहीं Check करता है।
-    document.write(10 != 20);
-    true
+                                Not Equal (!=)
+                                दो Values बराबर नहीं हैं या नहीं Check करता है।
+                                document.write(10 != 20);
+                                true
 
-    Not Identical (!==)
-    Value या Data Type समान नहीं है तो true देता है।
-    document.write(10 !== "10");
-    true
+                                Not Identical (!==)
+                                Value या Data Type समान नहीं है तो true देता है।
+                                document.write(10 !== "10");
+                                true
 
-    Greater Than (>)
-    बाईं ओर की Value दाईं ओर की Value से बड़ी है या नहीं Check करता है।
-    document.write(20 > 10);
-    true
+                                Greater Than (>)
+                                बाईं ओर की Value दाईं ओर की Value से बड़ी है या नहीं Check करता है।
+                                document.write(20 > 10);
+                                true
 
-    Less Than (<) बाईं ओर की Value दाईं ओर की Value से छोटी है या नहीं Check करता है। document.write(10 < 20); true
-        Greater Than or Equal To (>=)
-        बाईं ओर की Value बड़ी या बराबर है या नहीं Check करता है।
-        document.write(20 >= 20);
-        Output:
-        true
+                                Less Than (<) बाईं ओर की Value दाईं ओर की Value से छोटी है या नहीं Check करता है। document.write(10 < 20); true
+                                    Greater Than or Equal To (>=)
+                                    बाईं ओर की Value बड़ी या बराबर है या नहीं Check करता है।
+                                    document.write(20 >= 20);
+                                    Output:
+                                    true
 
-        Less Than or Equal To (<=) बाईं ओर की Value छोटी या बराबर है या नहीं Check करता है। document.write(10 <=20);
-            Output: true Comparison Operator <!DOCTYPE html>
-            <html>
+                                    Less Than or Equal To (<=) बाईं ओर की Value छोटी या बराबर है या नहीं Check करता है। document.write(10 <=20);
+                                        Output: true Comparison Operator <!DOCTYPE html>
+                                        <html>
 
-            <head>
-                <title>Hello, World!</title>
-                <link rel="stylesheet" href="styles.css" />
-            </head>
+                                        <head>
+                                            <title>Hello, World!</title>
+                                            <link rel="stylesheet" href="styles.css" />
+                                        </head>
 
-            <body>
-                <h4>value a=10,b=5 <br>
-                    ==========================</h4>
-                <h4>
-                    <script>
-                        var a = 10;
-                        var b = 5;
-                        var c = "test";
-                        var l = "</br>";
+                                        <body>
+                                            <h4>value a=10,b=5 <br>
+                                                ==========================</h4>
+                                            <h4>
+                                                <script>
+                                                    var a = 10;
+                                                    var b = 5;
+                                                    var c = "test";
+                                                    var l = "</br>";
 
 
-                        document.write("a == b ---");
-                        result = (a == b);
-                        document.write(result);
-                        document.write(l);
+                                                    document.write("a == b ---");
+                                                    result = (a == b);
+                                                    document.write(result);
+                                                    document.write(l);
 
-                        document.write("a != b -- ");
-                        result = (a != b);
-                        document.write(result);
-                        document.write(l);
+                                                    document.write("a != b -- ");
+                                                    result = (a != b);
+                                                    document.write(result);
+                                                    document.write(l);
 
-                        document.write("(a > b ) ---");
-                        result = (a > b);
-                        document.write(result);
-                        document.write(l);
+                                                    document.write("(a > b ) ---");
+                                                    result = (a > b);
+                                                    document.write(result);
+                                                    document.write(l);
 
-                        document.write("(a<b)---");
-                        result = (a < b);
-                        document.write(result);
-                        document.write(l);
+                                                    document.write("(a<b)---");
+                                                    result = (a < b);
+                                                    document.write(result);
+                                                    document.write(l);
 
 
-                        document.write("(a>=b )--- ");
-                        result = (a >= b)
-                        document.write(result);
-                        document.write(l);
-                        document.write("(a<=b)---");
-                        result = (a <= b);
-                        document.write(result);
-                        document.write(l);
+                                                    document.write("(a>=b )--- ");
+                                                    result = (a >= b)
+                                                    document.write(result);
+                                                    document.write(l);
+                                                    document.write("(a<=b)---");
+                                                    result = (a <= b);
+                                                    document.write(result);
+                                                    document.write(l);
 
-                    </script>
-                </h4>
-            </body>
+                                                </script>
+                                            </h4>
+                                        </body>
 
-            </html>
+                                        </html>
 
-            3. Logical Operators
-            Logical Operators एक या अधिक Conditions को Check करने के लिए उपयोग किए जाते हैं।
+                                        3. Logical Operators
+                                        Logical Operators एक या अधिक Conditions को Check करने के लिए उपयोग किए जाते हैं।
 
-            Logical AND (&&)
-            जब सभी Conditions True हों तभी True Return करता है।
-            document.write(true && true);
-            Output:
-            true
-            AND (&&) OPERATOR
-            <!DOCTYPE html>
-            <html>
+                                        Logical AND (&&)
+                                        जब सभी Conditions True हों तभी True Return करता है।
+                                        document.write(true && true);
+                                        Output:
+                                        true
+                                        AND (&&) OPERATOR
+                                        <!DOCTYPE html>
+                                        <html>
 
-            <body>
+                                        <body>
 
-                <h2>AND (&&) Operator</h2>
-                <p id="id1"></p>
+                                            <h2>AND (&&) Operator</h2>
+                                            <p id="id1"></p>
 
-                <script>
-                    var x = 6;
-                    var y = 3;
+                                            <script>
+                                                var x = 6;
+                                                var y = 3;
 
-                    document.getElementById("id1").innerHTML =
-                        "x < 10 && y > 1 = " + (x < 10 && y > 1) + "<br>" +
-                        "x < 10 && y < 1 = " + (x < 10 && y < 1);
-                </script>
-            </body>
+                                                document.getElementById("id1").innerHTML =
+                                                    "x < 10 && y > 1 = " + (x < 10 && y > 1) + "<br>" +
+                                                    "x < 10 && y < 1 = " + (x < 10 && y < 1);
+                                            </script>
+                                        </body>
 
-            </html>
+                                        </html>
 
-            Logical OR (||)
-            यदि कोई एक Condition भी True हो तो True Return करता है।
-            document.write(true || false);
-            Output:
-            true
+                                        Logical OR (||)
+                                        यदि कोई एक Condition भी True हो तो True Return करता है।
+                                        document.write(true || false);
+                                        Output:
+                                        true
 
 
-            OR ( || ) OPERATOR
-            <!DOCTYPE html>
-            <html>
+                                        OR ( || ) OPERATOR
+                                        <!DOCTYPE html>
+                                        <html>
 
-            <body>
-                <h2>OR operator (||)</h2>
+                                        <body>
+                                            <h2>OR operator (||)</h2>
 
-                <p id="ID2"></p>
+                                            <p id="ID2"></p>
 
-                <script>
-                    var x = 6;
-                    var y = 3;
+                                            <script>
+                                                var x = 6;
+                                                var y = 3;
 
-                    document.getElementById("ID2").innerHTML =
-                        "(x == 5 || y == 5) = " + (x == 5 || y == 5) + "<br>" +
-                        "(x == 6 || y == 0) = " + (x == 6 || y == 0) + "<br>" +
-                        "(x == 0 || y == 3) = " + (x == 0 || y == 3) + "<br>" +
-                        "(x == 6 || y == 3) = " + (x == 6 || y == 3);
-                </script>
-            </body>
+                                                document.getElementById("ID2").innerHTML =
+                                                    "(x == 5 || y == 5) = " + (x == 5 || y == 5) + "<br>" +
+                                                    "(x == 6 || y == 0) = " + (x == 6 || y == 0) + "<br>" +
+                                                    "(x == 0 || y == 3) = " + (x == 0 || y == 3) + "<br>" +
+                                                    "(x == 6 || y == 3) = " + (x == 6 || y == 3);
+                                            </script>
+                                        </body>
 
-            </html>
+                                        </html>
 
 
-            Logical NOT (!)
-            Condition के Result को उल्टा कर देता है।
-            document.write(!true);
-            Output:
-            false
+                                        Logical NOT (!)
+                                        Condition के Result को उल्टा कर देता है।
+                                        document.write(!true);
+                                        Output:
+                                        false
 
 
-            NOT ( ! ) OPERATOR
-            <!DOCTYPE html>
-            <html>
+                                        NOT ( ! ) OPERATOR
+                                        <!DOCTYPE html>
+                                        <html>
 
-            <body>
+                                        <body>
 
-                <h2>The NOT operator (!)</h2>
-                <p id="id1"></p>
+                                            <h2>The NOT operator (!)</h2>
+                                            <p id="id1"></p>
 
-                <script>
-                    var x = 6;
-                    var y = 3;
+                                            <script>
+                                                var x = 6;
+                                                var y = 3;
 
-                    document.getElementById("id1").innerHTML =
-                        "!(x == y) = " + !(6 == 3) + "<br>" +
-                        "!(x > y) = " + !(6 > 3);
-                </script>
-            </body>
+                                                document.getElementById("id1").innerHTML =
+                                                    "!(x == y) = " + !(6 == 3) + "<br>" +
+                                                    "!(x > y) = " + !(6 > 3);
+                                            </script>
+                                        </body>
 
-            </html>
+                                        </html>
 
 
-            4. Assignment Operators
-            Variable में Value Assign या Update करने के लिए उपयोग किए जाते हैं।
+                                        4. Assignment Operators
+                                        Variable में Value Assign या Update करने के लिए उपयोग किए जाते हैं।
 
-            Assignment (=)
-            Variable में Value Assign करता है।
-            let x = 10;
+                                        Assignment (=)
+                                        Variable में Value Assign करता है।
+                                        let x = 10;
 
-            Add and Assign (+=)
-            Value जोड़कर उसी Variable में Store करता है।
-            let x = 10;
-            x += 5; // x=x+5
+                                        Add and Assign (+=)
+                                        Value जोड़कर उसी Variable में Store करता है।
+                                        let x = 10;
+                                        x += 5; // x=x+5
 
-            Subtract and Assign (-=)
-            Value घटाकर उसी Variable में Store करता है।
-            let x = 10;
-            x -= 2;
+                                        Subtract and Assign (-=)
+                                        Value घटाकर उसी Variable में Store करता है।
+                                        let x = 10;
+                                        x -= 2;
 
-            Multiply and Assign (*=)
-            Value गुणा करके उसी Variable में Store करता है।
-            let x = 10;
-            x *= 2;
+                                        Multiply and Assign (*=)
+                                        Value गुणा करके उसी Variable में Store करता है।
+                                        let x = 10;
+                                        x *= 2;
 
-            Divide and Assign (/=)
-            Value भाग करके उसी Variable में Store करता है।
-            let x = 10;
-            x /= 2;
+                                        Divide and Assign (/=)
+                                        Value भाग करके उसी Variable में Store करता है।
+                                        let x = 10;
+                                        x /= 2;
 
-            Modulus and Assign (%=)
-            Modulus निकालकर उसी Variable में Store करता है।
-            let x = 10;
-            x %= 3;
+                                        Modulus and Assign (%=)
+                                        Modulus निकालकर उसी Variable में Store करता है।
+                                        let x = 10;
+                                        x %= 3;
 
-            5. Bitwise Operators
-            Bitwise Operators Binary Bits (0 और 1) पर Operation करते हैं।
+                                        5. Bitwise Operators
+                                        Bitwise Operators Binary Bits (0 और 1) पर Operation करते हैं।
 
-            Bitwise AND (&)
-            दोनों Bits 1 होने पर 1 Return करता है।
-            document.write(5 & 1);
+                                        Bitwise AND (&)
+                                        दोनों Bits 1 होने पर 1 Return करता है।
+                                        document.write(5 & 1);
 
-            Bitwise OR (|)
-            किसी एक Bit के 1 होने पर 1 Return करता है।
-            document.write(5 | 1);
+                                        Bitwise OR (|)
+                                        किसी एक Bit के 1 होने पर 1 Return करता है।
+                                        document.write(5 | 1);
 
-            Bitwise XOR (^)
-            Bits अलग-अलग होने पर 1 Return करता है।
-            document.write(5 ^ 1);
+                                        Bitwise XOR (^)
+                                        Bits अलग-अलग होने पर 1 Return करता है।
+                                        document.write(5 ^ 1);
 
-            Bitwise NOT (~)
-            सभी Bits को उल्टा (Invert) कर देता है।
-            document.write(~5);
+                                        Bitwise NOT (~)
+                                        सभी Bits को उल्टा (Invert) कर देता है।
+                                        document.write(~5);
 
-            Left Shift (<<) Bits को बाईं ओर Shift करता है। document.write(5 << 1); Right Shift (>>)
-                Bits को दाईं ओर Shift करता है।
-                document.write(10 >> 1);
+                                        Left Shift (<<) Bits को बाईं ओर Shift करता है। document.write(5 << 1); Right Shift (>>)
+                                            Bits को दाईं ओर Shift करता है।
+                                            document.write(10 >> 1);
 
-                Unsigned Right Shift (>>>)
-                Bits को दाईं ओर Shift करता है और Sign Bit को Ignore करता है।
-                document.write(10 >>> 1);
+                                            Unsigned Right Shift (>>>)
+                                            Bits को दाईं ओर Shift करता है और Sign Bit को Ignore करता है।
+                                            document.write(10 >>> 1);
 
-                <!DOCTYPE html>
-                <html lang="en">
+                                            <!DOCTYPE html>
+                                            <html lang="en">
 
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Document</title>
-                </head>
+                                            <head>
+                                                <meta charset="UTF-8">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                <title>Document</title>
+                                            </head>
 
-                <body>
-                    <h1>Example OF Bitwise Operator</h1>
-                    <script>
-                        var a = 6;
-                        var b = 1;
-                        document.write("1. Bitwise and Example 'A & B' = " + (a & b) + '<br>');
-                        document.write("2. Bitwise OR Example 'A | B' = " + (a | b) + '<br>');
-                        document.write("3. Bitwise XOR Example 'A ^ B' = " + (a ^ b) + '<br>');
-                        document.write("4. Bitwise NOT Example 'A ~ B' = " + (~a) + '<br>');
-                        document.write("5. Left Shift Example 'A << B' = " + (a << b) + '<br>');
-                        document.write("6. Sign Propagating Right Shift Example 'A >> B' = " + (a >> b) + '<br>');
-                        document.write("7.  Zero Fill Right Shift 'A >>> B' = " + (a >>> b) + '<br>');
+                                            <body>
+                                                <h1>Example OF Bitwise Operator</h1>
+                                                <script>
+                                                    var a = 6;
+                                                    var b = 1;
+                                                    document.write("1. Bitwise and Example 'A & B' = " + (a & b) + '<br>');
+                                                    document.write("2. Bitwise OR Example 'A | B' = " + (a | b) + '<br>');
+                                                    document.write("3. Bitwise XOR Example 'A ^ B' = " + (a ^ b) + '<br>');
+                                                    document.write("4. Bitwise NOT Example 'A ~ B' = " + (~a) + '<br>');
+                                                    document.write("5. Left Shift Example 'A << B' = " + (a << b) + '<br>');
+                                                    document.write("6. Sign Propagating Right Shift Example 'A >> B' = " + (a >> b) + '<br>');
+                                                    document.write("7.  Zero Fill Right Shift 'A >>> B' = " + (a >>> b) + '<br>');
 
-                    </script>
-                </body>
+                                                </script>
+                                            </body>
 
-                </html>
+                                            </html>
 
-                6. Conditional (Ternary) Operator
+                                            6. Conditional (Ternary) Operator
 
-                Ternary Operator (? :)
-                यह if...else का Short Form है जो Condition के आधार पर दो Values में से एक चुनता है।
-                let age = 18;
-                let result = age >= 18 ? "Adult" : "Minor";
-                document.write(result);
-                Output:
-                Adult
+                                            Ternary Operator (? :)
+                                            यह if...else का Short Form है जो Condition के आधार पर दो Values में से एक चुनता है।
+                                            let age = 18;
+                                            let result = age >= 18 ? "Adult" : "Minor";
+                                            document.write(result);
+                                            Output:
+                                            Adult
 
 
-                <!DOCTYPE html>
-                <html>
+                                            <!DOCTYPE html>
+                                            <html>
 
-                <head>
-                    <title>Hello, World!</title>
-                    <link rel="stylesheet" href="styles.css" />
-                </head>
+                                            <head>
+                                                <title>Hello, World!</title>
+                                                <link rel="stylesheet" href="styles.css" />
+                                            </head>
 
-                <body>
+                                            <body>
 
-                    <h4>
-                        <script>
+                                                <h4>
+                                                    <script>
 
-                            var a = 10;
-                            var b = 5;
-                            var l = "<br>";
+                                                        var a = 10;
+                                                        var b = 5;
+                                                        var l = "<br>";
 
 
-                            document.write("((a>b)?100:200)=");
-                            var result = (a > b) ? 100 : 200;
-                            document.write(result);
-                            document.write(l);
+                                                        document.write("((a>b)?100:200)=");
+                                                        var result = (a > b) ? 100 : 200;
+                                                        document.write(result);
+                                                        document.write(l);
 
-                            // document.write("((a&lt;b)?100:200)=");
-                            document.write("((a<b)?100:200)=");
-                            var result1 = (a < b) ? 100 : 200;
-                            document.write(result1);
-                            document.write(l);
-                        </script>
+                                                        // document.write("((a&lt;b)?100:200)=");
+                                                        document.write("((a<b)?100:200)=");
+                                                        var result1 = (a < b) ? 100 : 200;
+                                                        document.write(result1);
+                                                        document.write(l);
+                                                    </script>
 
-                    </h4>
-                </body>
+                                                </h4>
+                                            </body>
 
-                </html>
+                                            </html>
 
 
-                Project
+                                            Project
 
-                <!DOCTYPE html>
-                <html lang="en">
+                                            <!DOCTYPE html>
+                                            <html lang="en">
 
-                <head>
-                    <meta charset="UTF-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Document</title>
-                </head>
+                                            <head>
+                                                <meta charset="UTF-8">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                <title>Document</title>
+                                            </head>
 
-                <body>
-                    <p>
-                        Click On Button To Increament Counter
-                    </p>
-                    <input id="c" value="" />
-                    <button onclick="myfun()">Check It</button>
-                    <p id="demo"></p>
-                    <script>
-                        function myfun() {
-                            var count = document.getElementById("c").value
-                            count = count > 1 ? ++count : 0;
-                            document.getElementById("c").value = count
-                        }
-                    </script>
-                </body>
+                                            <body>
+                                                <p>
+                                                    Click On Button To Increament Counter
+                                                </p>
+                                                <input id="c" value="" />
+                                                <button onclick="myfun()">Check It</button>
+                                                <p id="demo"></p>
+                                                <script>
+                                                    function myfun() {
+                                                        var count = document.getElementById("c").value
+                                                        count = count > 1 ? ++count : 0;
+                                                        document.getElementById("c").value = count
+                                                    }
+                                                </script>
+                                            </body>
 
-                </html>
+                                            </html>
 
 
-                7. typeof Operator
-                typeof
-                किसी Variable का Data Type पता करने के लिए उपयोग किया जाता है।
-                let name = "Adil";
-                document.write(typeof name);
-                Output:
-                string
+                                            7. typeof Operator
+                                            typeof
+                                            किसी Variable का Data Type पता करने के लिए उपयोग किया जाता है।
+                                            let name = "Adil";
+                                            document.write(typeof name);
+                                            Output:
+                                            string
 
-                8. Special Operators
+                                            8. Special Operators
 
-                1. in Operator
-                Object के अंदर कोई Property मौजूद है या नहीं Check करता है।
-                let student = {
-                name: "Adil"
-                };
-                document.write("name" in student);
-                Output:
-                true
+                                            1. in Operator
+                                            Object के अंदर कोई Property मौजूद है या नहीं Check करता है।
+                                            let student = {
+                                            name: "Adil"
+                                            };
+                                            document.write("name" in student);
+                                            Output:
+                                            true
 
-                2. instanceof operator
-                यह Check करता है कि Object किस Class या Constructor से बनाया गया है।
-                let arr = [1,2,3];
-                document.write(arr instanceof Array);
-                Output:
-                true
+                                            2. instanceof operator
+                                            यह Check करता है कि Object किस Class या Constructor से बनाया गया है।
+                                            let arr = [1,2,3];
+                                            document.write(arr instanceof Array);
+                                            Output:
+                                            true
 
-                3. delete Operator
-                delete Operator Object की Property को Remove (Delete) करने के लिए उपयोग किया जाता है।
+                                            3. delete Operator
+                                            delete Operator Object की Property को Remove (Delete) करने के लिए उपयोग किया जाता है।
 
-                Syntax
-                delete object.propertyName;
+                                            Syntax
+                                            delete object.propertyName;
 
-                Example
-                let student = {
-                name: "Adil",
-                age: 22
-                };
+                                            Example
+                                            let student = {
+                                            name: "Adil",
+                                            age: 22
+                                            };
 
-                delete student.age;
+                                            delete student.age;
 
-                document.write(student);
+                                            document.write(student);
 
-                4. new Operator
-                new Operator नया Object Create करने के लिए उपयोग किया जाता है।
+                                            4. new Operator
+                                            new Operator नया Object Create करने के लिए उपयोग किया जाता है।
 
-                Syntax
-                new Constructor()
+                                            Syntax
+                                            new Constructor()
 
-                Example
-                let today = new Date();
-                document.write(today);
+                                            Example
+                                            let today = new Date();
+                                            document.write(today);
 
-                Example
-                let arr = new Array();
-                arr.push(100);
-                document.write(arr);
+                                            Example
+                                            let arr = new Array();
+                                            arr.push(100);
+                                            document.write(arr);
 
-                5. yield Operator
-                yield Operator Generator Function के अंदर Execution को Pause और Resume करने के लिए उपयोग किया जाता है।
+                                            5. yield Operator
+                                            yield Operator Generator Function के अंदर Execution को Pause और Resume करने के लिए उपयोग किया जाता है।
 
-                Syntax
-                yield value;
+                                            Syntax
+                                            yield value;
 
-                Example
-                function* demo() {
-                yield 10;
-                yield 20;
-                yield 30;
-                }
+                                            Example
+                                            function* demo() {
+                                            yield 10;
+                                            yield 20;
+                                            yield 30;
+                                            }
 
-                let obj = demo();
+                                            let obj = demo();
 
-                document.write(obj.next());
-                document.write(obj.next());
-                document.write(obj.next());
-                Output
-                { value: 10, done: false }
+                                            document.write(obj.next());
+                                            document.write(obj.next());
+                                            document.write(obj.next());
+                                            Output
+                                            { value: 10, done: false }
 
-                { value: 20, done: false }
+                                            { value: 20, done: false }
 
-                { value: 30, done: false }
+                                            { value: 30, done: false }
 
-                Example 2
-                function* test() {
-                yield "Java";
-                yield "JavaScript";
-                }
+                                            Example 2
+                                            function* test() {
+                                            yield "Java";
+                                            yield "JavaScript";
+                                            }
 
-                let x = test();
-                document.write(x.next().value);
-                document.write(x.next().value);
-                Output
-                Java
-                JavaScript
+                                            let x = test();
+                                            document.write(x.next().value);
+                                            document.write(x.next().value);
+                                            Output
+                                            Java
+                                            JavaScript
 
-                कब Use होता है?
-                Large Data Processing
-                Iteration Control
-                Lazy Loading
-                Async Programming
+                                            कब Use होता है?
+                                            Large Data Processing
+                                            Iteration Control
+                                            Lazy Loading
+                                            Async Programming
 
-                6. void Operator
-                void Operator किसी Expression को Execute करता है लेकिन उसका Result Return नहीं करता, बल्कि हमेशा
-                undefined Return करता है।
-                void = Execute karo
-                Result bhool jao
-                undefined return karo
+                                            6. void Operator
+                                            void Operator किसी Expression को Execute करता है लेकिन उसका Result Return नहीं करता, बल्कि हमेशा
+                                            undefined Return करता है।
+                                            void = Execute karo
+                                            Result bhool jao
+                                            undefined return karo
 
-                Example 1: Simple
-                let result = void(10 + 20);
-                document.write(result);
+                                            Example 1: Simple
+                                            let result = void(10 + 20);
+                                            document.write(result);
 
-                Output
-                undefined
+                                            Output
+                                            undefined
 
-                2. Function Call-
+                                            2. Function Call-
 
-                function showMessage() {
-                document.write("Welcome Amit");
-                }
+                                            function showMessage() {
+                                            document.write("Welcome Amit");
+                                            }
 
-                let result = void showMessage();
+                                            let result = void showMessage();
 
-                document.write(result);
+                                            document.write(result);
 
-                output
-                Welcome Amit
-                undefined
+                                            output
+                                            Welcome Amit
+                                            undefined
 
-                3. function add(a, b) {
-                return a + b;
-                }
+                                            3. function add(a, b) {
+                                            return a + b;
+                                            }
 
-                document.write(add(10, 20));
+                                            document.write(add(10, 20));
 
-                // function call but void use
+                                            // function call but void use
 
-                4. function add(a, b) {
-                return a + b;
-                }
+                                            4. function add(a, b) {
+                                            return a + b;
+                                            }
 
-                document.write(void add(10, 20));
+                                            document.write(void add(10, 20));
 
-                function test() {
-                return "Hello";
-                }
+                                            function test() {
+                                            return "Hello";
+                                            }
 
-                document.write(test());
+                                            document.write(test());
 
-                //return false / true
-                function add(a, b)
-                {
-                if(a + b > 20)
-                {
-                return true;
-                }
-                else
-                {
-                return false;
-                }
-                }
+                                            //return false / true
+                                            function add(a, b)
+                                            {
+                                            if(a + b > 20)
+                                            {
+                                            return true;
+                                            }
+                                            else
+                                            {
+                                            return false;
+                                            }
+                                            }
 
-                document.write(add(10, 20));
-                document.write(add(5, 10));
+                                            document.write(add(10, 20));
+                                            document.write(add(5, 10));
 
-                2.
-                function add(a, b)
-                {
-                return (a + b) % 2 == 0;
-                }
+                                            2.
+                                            function add(a, b)
+                                            {
+                                            return (a + b) % 2 == 0;
+                                            }
 
-                document.write(add(10, 20));
-                document.write(add(10, 15));
-
-                3. Form submit Stop
-                <!DOCTYPE html>
-                <html>
+                                            document.write(add(10, 20));
+                                            document.write(add(10, 15));
+
+                                            3. Form submit Stop
+                                            <!DOCTYPE html>
+                                            <html>
 
-                <body>
-                    <form onsubmit="return validate()">
-                        Name:
-                        <input type="text" id="name">
-                        <input type="submit" value="Submit">
-                    </form>
-                    <script>
-                        function validate() {
-                            let name = document.getElementById("name").value;
-                            if (name == "") {
-                                alert("Name Required");
-                                return false;
-                            }
-                            return true;
-                        }
-                    </script>
-                </body>
-
-                </html>
-
-                void function ko page reload na hu ya koi return value nhi chahiye undefined chahiye tb use krte the but
-                ab event.prevendDefault return false use krte hai.
-
-                JavaScript में मुख्य रूप से 8 प्रकार के Operators होते हैं:
-                Arithmetic Operators
-                Comparison Operators
-                Logical Operators
-                Assignment Operators
-                Bitwise Operators
-                Conditional (Ternary) Operator
-                typeof Operator
-                Special Operators (in, instanceof)
-
-                JavaScript Conditional Statements:-
-                Conditional Statement वह Statement होता है जो किसी Condition (शर्त) को Check करके निर्णय (Decision) लेता
-                है कि कौन सा Code Execute होगा
-                "अगर Condition सही (true) है तो एक काम करो, नहीं तो दूसरा काम करो।"
-
-                Age 18 से ज्यादा है या नहीं
-                Student Pass है या Fail
-                Login Successful है या नहीं
-                Week का कौन सा Day है
-
-                JavaScript में मुख्य रूप से 5 प्रकार के Conditional Statements होते हैं:
-
-                if Statement
-                if...else Statement
-                if....else if Ladder
-                Nested if
-                switch Statement
-
-                1. if Statement
-                जब केवल Condition True होने पर Code Execute करना हो तब if Statement का उपयोग करते हैं।
-
-                Syntax
-                if(condition)
-                {
-                // code
-                }
-                Example
-                let age = 20;
-                if(age >= 18)
-                {
-                document.write("Eligible for Voting");
-                }
-                Output
-                Eligible for Voting
-
-                Use:जब केवल True Condition पर काम करना हो।
-
-                2. if...else Statement
-
-                जब Condition True हो तो एक Code और False हो तो दूसरा Code Execute करना हो तब if...else का उपयोग करते
-                हैं।
-
-                Syntax
-                if(condition)
-                {
-                // true block
-                }
-                else
-                {
-                // false block
-                }
-                Example
-                let age = 16;
-                if(age >= 18)
-                {
-                document.write("Eligible");
-                }
-                else
-                {
-                document.write("Not Eligible");
-                }
-                Output
-                Not Eligible
-
-                Use :जब दो option (True/False) हों।
-
-                3. else if Ladder
-                जब कई Conditions Check करनी हों तब else if Ladder का उपयोग किया जाता है।
-
-                Syntax
-                if(condition1)
-                {
-                }
-                else if(condition2)
-                {
-                }
-                else if(condition3)
-                {
-                }
-                else
-                {
-                }
-                Example
-                let marks = 75;
-
-                if(marks >= 90)
-                {
-                document.write("Grade A");
-                }
-                else if(marks >= 80)
-                {
-                document.write("Grade B");
-                }
-                else if(marks >= 70)
-                {
-                document.write("Grade C");
-                }
-                else
-                {
-                document.write("Fail");
-                }
-                Output
-                Grade C
-
-                Use :जब Multiple Conditions हों।
-
-                4. Nested if
-                जब एक if के अंदर दूसरा if लिखा जाता है तो उसे Nested if कहते हैं।
-
-                Syntax
-                if(condition1)
-                {
-
-                if(condition2)
-                {
-
-                }
-                }
-                Example
-                let feePaid = true;
-                let parentPermission = true;
-
-                if(feePaid)
-                {
-                if(parentPermission)
-                {
-                document.write("Picnic Allowed");
-                }
-                else
-                {
-                document.write("Parent Permission Required");
-                }
-                }
-                else
-                {
-                document.write("Fee Not Paid");
-                }
-
-                Use: जब एक Condition के अंदर दूसरी Condition Check करनी हो।
-
-                5. switch Statement
-                जब एक Variable की Value के आधार पर कई Cases में से एक चुनना हो तब switch Statement का उपयोग करते हैं।
-
-                Syntax
-                switch(expression)
-                {
-                case value1:
-                code;
-                break;
-
-                case value2:
-                code;
-                break;
-
-                default:
-                code;
-                }
-                Example
-                let day = 3;
-
-                switch(day)
-                {
-                case 1:
-                document.write("Monday");
-                break;
-
-                case 2:
-                document.write("Tuesday");
-                break;
-
-                case 3:
-                document.write("Wednesday");
-                break;
-
-                default:
-                document.write("Invalid Day");
-                }
-                Output
-                Wednesday
-
-                Use: जब एक Variable की कई Fixed Values Check करनी हों।
-
-                if(condition and value check)
-                switch(range and value check fast readable)
-
-                one liner:
-
-                if Statement
-                Condition True होने पर Code Execute करने वाला Statement।
-
-                if...else Statement
-
-                True और False दोनों Conditions के लिए अलग-अलग Code Execute करने वाला Statement।
-
-                else if Ladder
-
-                Multiple Conditions Check करने वाला Statement।
-
-                Nested if
-
-                एक if Statement के अंदर दूसरा if Statement।
-                switch Statement
-                किसी Expression की Value के आधार पर विभिन्न Cases में से एक को Execute करने वाला Statement।
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
-</head>
-<body>
-    <div Class="w3-center w3-panel w3-purple w3-text-white">
-    <p class="w3-sand w3-padding-large w3-xlarge" id="text"></p>
-    </div>
-
-    <script>
-        document.getElementById('text').innerHTML = '<br>' + getfruitcolor('ENGLISH');
-        function getfruitcolor(Books) {
-            var msg;
-            switch (Books) {
-                case 'CCC':
-                    msg = "CCC is the best book of our publication";
-                    break;
-                case 'HINDI':
-                    msg = "HINDI is the our new Book";
-                    break;
-                case 'ENGLISH':
-                    msg = "ENglish is the Our New Book";
-                    break;
-                default:
-                    msg = "Books is Not Available";
-            }
-            return msg;
-        }
-    </script>
-</body>
-</html> 
-
-<!-- Alert Box -->
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Example Of Alert Box</h1>
-    <button onclick="myfun()">Click IT</button>
-    <script>
-        function myfun() {
-            alert("Hello i am an alert box");
-        }
-    </script>
-</body>
-</html> 
-
-<!-- Confirmation box -->
- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-    <h1>Confirmation Alert Box</h1>
-    <button onclick="myconfirmation()">Confirm It</button>
-    <p id="try"></p>
-    <script>
-        function myconfirmation() {
-            var txt;
-            if (confirm("do you want to continue")) {
-                txt = "User want to continue work in this website";
-            }
-            else
-                txt = "User do not want to continue work in this website";
-            document.getElementById("try").innerHTML = txt;
-
-        }
-    </script>
-</body>
-
-</html> 
-            </pre>
-</body>
-
-</html>
+                                            <body>
+                                                <form onsubmit="return validate()">
+                                                    Name:
+                                                    <input type="text" id="name">
+                                                    <input type="submit" value="Submit">
+                                                </form>
+                                                <script>
+                                                    function validate() {
+                                                        let name = document.getElementById("name").value;
+                                                        if (name == "") {
+                                                            alert("Name Required");
+                                                            return false;
+                                                        }
+                                                        return true;
+                                                    }
+                                                </script>
+                                            </body>
+
+                                            </html>
+
+                                            void function ko page reload na hu ya koi return value nhi chahiye undefined chahiye tb use krte the but
+                                            ab event.prevendDefault return false use krte hai.
+
+                                            JavaScript में मुख्य रूप से 8 प्रकार के Operators होते हैं:
+                                            Arithmetic Operators
+                                            Comparison Operators
+                                            Logical Operators
+                                            Assignment Operators
+                                            Bitwise Operators
+                                            Conditional (Ternary) Operator
+                                            typeof Operator
+                                            Special Operators (in, instanceof)
+
+                                            JavaScript Conditional Statements:-
+                                            Conditional Statement वह Statement होता है जो किसी Condition (शर्त) को Check करके निर्णय (Decision) लेता
+                                            है कि कौन सा Code Execute होगा
+                                            "अगर Condition सही (true) है तो एक काम करो, नहीं तो दूसरा काम करो।"
+
+                                            Age 18 से ज्यादा है या नहीं
+                                            Student Pass है या Fail
+                                            Login Successful है या नहीं
+                                            Week का कौन सा Day है
+
+                                            JavaScript में मुख्य रूप से 5 प्रकार के Conditional Statements होते हैं:
+
+                                            if Statement
+                                            if...else Statement
+                                            if....else if Ladder
+                                            Nested if
+                                            switch Statement
+
+                                            1. if Statement
+                                            जब केवल Condition True होने पर Code Execute करना हो तब if Statement का उपयोग करते हैं।
+
+                                            Syntax
+                                            if(condition)
+                                            {
+                                            // code
+                                            }
+                                            Example
+                                            let age = 20;
+                                            if(age >= 18)
+                                            {
+                                            document.write("Eligible for Voting");
+                                            }
+                                            Output
+                                            Eligible for Voting
+
+                                            Use:जब केवल True Condition पर काम करना हो।
+
+                                            2. if...else Statement
+
+                                            जब Condition True हो तो एक Code और False हो तो दूसरा Code Execute करना हो तब if...else का उपयोग करते
+                                            हैं।
+
+                                            Syntax
+                                            if(condition)
+                                            {
+                                            // true block
+                                            }
+                                            else
+                                            {
+                                            // false block
+                                            }
+                                            Example
+                                            let age = 16;
+                                            if(age >= 18)
+                                            {
+                                            document.write("Eligible");
+                                            }
+                                            else
+                                            {
+                                            document.write("Not Eligible");
+                                            }
+                                            Output
+                                            Not Eligible
+
+                                            Use :जब दो option (True/False) हों।
+
+                                            3. else if Ladder
+                                            जब कई Conditions Check करनी हों तब else if Ladder का उपयोग किया जाता है।
+
+                                            Syntax
+                                            if(condition1)
+                                            {
+                                            }
+                                            else if(condition2)
+                                            {
+                                            }
+                                            else if(condition3)
+                                            {
+                                            }
+                                            else
+                                            {
+                                            }
+                                            Example
+                                            let marks = 75;
+
+                                            if(marks >= 90)
+                                            {
+                                            document.write("Grade A");
+                                            }
+                                            else if(marks >= 80)
+                                            {
+                                            document.write("Grade B");
+                                            }
+                                            else if(marks >= 70)
+                                            {
+                                            document.write("Grade C");
+                                            }
+                                            else
+                                            {
+                                            document.write("Fail");
+                                            }
+                                            Output
+                                            Grade C
+
+                                            Use :जब Multiple Conditions हों।
+
+                                            4. Nested if
+                                            जब एक if के अंदर दूसरा if लिखा जाता है तो उसे Nested if कहते हैं।
+
+                                            Syntax
+                                            if(condition1)
+                                            {
+
+                                            if(condition2)
+                                            {
+
+                                            }
+                                            }
+                                            Example
+                                            let feePaid = true;
+                                            let parentPermission = true;
+
+                                            if(feePaid)
+                                            {
+                                            if(parentPermission)
+                                            {
+                                            document.write("Picnic Allowed");
+                                            }
+                                            else
+                                            {
+                                            document.write("Parent Permission Required");
+                                            }
+                                            }
+                                            else
+                                            {
+                                            document.write("Fee Not Paid");
+                                            }
+
+                                            Use: जब एक Condition के अंदर दूसरी Condition Check करनी हो।
+
+                                            5. switch Statement
+                                            जब एक Variable की Value के आधार पर कई Cases में से एक चुनना हो तब switch Statement का उपयोग करते हैं।
+
+                                            Syntax
+                                            switch(expression)
+                                            {
+                                            case value1:
+                                            code;
+                                            break;
+
+                                            case value2:
+                                            code;
+                                            break;
+
+                                            default:
+                                            code;
+                                            }
+                                            Example
+                                            let day = 3;
+
+                                            switch(day)
+                                            {
+                                            case 1:
+                                            document.write("Monday");
+                                            break;
+
+                                            case 2:
+                                            document.write("Tuesday");
+                                            break;
+
+                                            case 3:
+                                            document.write("Wednesday");
+                                            break;
+
+                                            default:
+                                            document.write("Invalid Day");
+                                            }
+                                            Output
+                                            Wednesday
+
+                                            Use: जब एक Variable की कई Fixed Values Check करनी हों।
+
+                                            if(condition and value check)
+                                            switch(range and value check fast readable)
+
+                                            one liner:
+
+                                            if Statement
+                                            Condition True होने पर Code Execute करने वाला Statement।
+
+                                            if...else Statement
+
+                                            True और False दोनों Conditions के लिए अलग-अलग Code Execute करने वाला Statement।
+
+                                            else if Ladder
+
+                                            Multiple Conditions Check करने वाला Statement।
+
+                                            Nested if
+
+                                            एक if Statement के अंदर दूसरा if Statement।
+                                            switch Statement
+                                            किसी Expression की Value के आधार पर विभिन्न Cases में से एक को Execute करने वाला Statement।
+
+                                            <!DOCTYPE html>
+                                            <html lang="en">
+                                            <head>
+                                                <meta charset="UTF-8">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                <title>Document</title>
+                                                <link rel="stylesheet"href="https://www.w3schools.com/w3css/4/w3.css">
+                                            </head>
+                                            <body>
+                                                <div Class="w3-center w3-panel w3-purple w3-text-white">
+                                                <p class="w3-sand w3-padding-large w3-xlarge" id="text"></p>
+                                                </div>
+
+                                                <script>
+                                                    document.getElementById('text').innerHTML = '<br>' + getfruitcolor('ENGLISH');
+                                                    function getfruitcolor(Books) {
+                                                        var msg;
+                                                        switch (Books) {
+                                                            case 'CCC':
+                                                                msg = "CCC is the best book of our publication";
+                                                                break;
+                                                            case 'HINDI':
+                                                                msg = "HINDI is the our new Book";
+                                                                break;
+                                                            case 'ENGLISH':
+                                                                msg = "ENglish is the Our New Book";
+                                                                break;
+                                                            default:
+                                                                msg = "Books is Not Available";
+                                                        }
+                                                        return msg;
+                                                    }
+                                                </script>
+                                            </body>
+                                            </html> 
+
+                                            <!-- Alert Box -->
+                                            <!DOCTYPE html>
+                                            <html lang="en">
+                                            <head>
+                                                <meta charset="UTF-8">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                <title>Document</title>
+                                            </head>
+                                            <body>
+                                                <h1>Example Of Alert Box</h1>
+                                                <button onclick="myfun()">Click IT</button>
+                                                <script>
+                                                    function myfun() {
+                                                        alert("Hello i am an alert box");
+                                                    }
+                                                </script>
+                                            </body>
+                                            </html> 
+
+                                            <!-- Confirmation box -->
+                                            <!DOCTYPE html>
+                                            <html lang="en">
+
+                                            <head>
+                                                <meta charset="UTF-8">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                <title>Document</title>
+                                            </head>
+
+                                            <body>
+                                                <h1>Confirmation Alert Box</h1>
+                                                <button onclick="myconfirmation()">Confirm It</button>
+                                                <p id="try"></p>
+                                                <script>
+                                                    function myconfirmation() {
+                                                        var txt;
+                                                        if (confirm("do you want to continue")) {
+                                                            txt = "User want to continue work in this website";
+                                                        }
+                                                        else
+                                                            txt = "User do not want to continue work in this website";
+                                                        document.getElementById("try").innerHTML = txt;
+
+                                                    }
+                                                </script>
+                                            </body>
+
+                                            </html> 
+                                                        </pre>
+                                            </body>
+
+                                            </html>
