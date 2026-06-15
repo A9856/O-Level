@@ -1,9 +1,9 @@
 # O-Level Project
 
-## Description
-This repository contains O-Level practical work.
+This repository contains O-Level practical files.
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
+## Files
+- index.html
+
+## Author
+Adil Khan
