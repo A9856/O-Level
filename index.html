@@ -1135,6 +1135,77 @@
                                             Syntax
                                             yield value;
 
+                                            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #output {
+            margin: 20px auto;
+            padding: 15px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            width: 400px;
+            background: #f4f4f4;
+            font-family: monospace;
+        }
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript Generator Demo</h1>
+    <p>Click the button to get the next value from the generator</p>
+    
+    <button onclick="nextValue()">Get Next Value</button>//NEXTNUMBER KE LIYE BUTTON HAI nextValue() call hai.
+    <button onclick="resetGenerator()">Reset Generator</button>//function ko reset krne k liye button hai resetGenerator()
+
+    <div id="output">Output will appear here...</div>//code ka output isi ID pr dikhayi dega. jo window load hone pr nextvalue na dikhana hai toh Output will appear here dikhayi dega window.load ko comment krna hoga.
+
+    <script>
+        function* demo() {
+            yield 10; 
+            yield 20;
+            yield 30;
+        }
+
+        let generator = demo();  // Create generator object
+
+        function nextValue() {
+            const result = generator.next();// demo ke value ko generator.next() se result me assign kr rhe hai.
+            const outputDiv = document.getElementById('output'); // output id pr jo display hu rha hai usae outputDiv me assign kr rha hai
+
+            if (result.done) {
+                outputDiv.innerHTML = `<strong>Generator Finished!</strong><br>{ value: undefined, done: true }`;// jb result me done hu jaega mtlb 30 ke bad koi value nhi hogi result.done hu jaega tb value undefined aur done me true dikhaega jb tk value rhegi toh else vala chlega
+            } else {
+                outputDiv.innerHTML = `<strong>Next Value:</strong><br>{ value: ${result.value}, done: ${result.done} }`; // result me yield ki value aur next() done false aur true assign krega
+            }
+        }
+
+        function resetGenerator() {
+            generator = demo();  // Reset the generator
+            document.getElementById('output').innerHTML = "Generator has been reset. Click 'Get Next Value' to start again.";
+        }
+
+        // Show first value automatically
+        window.onload = () => {
+            nextValue();
+        };
+    </script>
+</body>
+</html>
+
                                             Example
                                             function* demo() {
                                             yield 10;
@@ -1572,6 +1643,6 @@
 
                                         </html> 
                                                     </pre>
-                                        </body>
+</body>
 
-                                        </html>
+</html>

@@ -1,0 +1,1166 @@
+Event	                    Definition
+onclick	                    Element पर Click होने पर Trigger होता है।
+ondblclick	                Double Click होने पर Trigger होता है।
+onmousedown	                Mouse Button दबाने पर Trigger होता है।
+onmouseup	                Mouse Button छोड़ने पर Trigger होता है।
+onmousemove	                Mouse Move होने पर Trigger होता है।
+onmouseover	                Mouse Element के ऊपर आने पर Trigger होता है।
+onmouseout	                Mouse Element से बाहर जाने पर Trigger होता है।
+onmousewheel	            Mouse Wheel Scroll होने पर Trigger होता है।
+oncontextmenu	            Right Click Menu Open होने पर Trigger होता है।
+
+Keyboard Events
+Event	                    Definition
+onkeydown	                Key दबाते ही Trigger होता है।
+onkeypress	                Character Key Press होने पर Trigger होता है।
+onkeyup	                    Key छोड़ने पर Trigger होता है।
+
+Form Events
+Event	                    Definition
+onchange	                Value Change होने के बाद Trigger होता है।
+oninput	                    Typing करते समय Trigger होता है।
+oninvalid	                Invalid Input होने पर Trigger होता है।
+onsubmit	                Form Submit होने पर Trigger होता है।
+onfocus	                    Input Field Active होने पर Trigger होता है।
+onblur	                    Input Field से Focus हटने पर Trigger होता है।
+onselect	                Text Select होने पर Trigger होता है।
+onformchange	            Form Data Change होने पर Trigger (Deprecated)।
+onforminput	                Form Input होने पर Trigger (Deprecated)।
+
+Drag & Drop Events
+Event	                    Definition
+ondrag	                    Drag करते समय Trigger होता है।
+ondragstart	                Drag Start होने पर Trigger होता है।
+ondragend	                Drag End होने पर Trigger होता है।
+ondragenter	                Draggable Element Drop Area में आने पर Trigger होता है।
+ondragleave	                Drop Area छोड़ने पर Trigger होता है।
+ondragover	                Drop Area के ऊपर Drag होने पर Trigger होता है।
+ondrop	                    Drop करने पर Trigger होता है।
+
+Media Events
+Event	                    Definition
+oncanplay	                Media Play होने के लिए Ready होने पर।
+oncanplaythrough	        Media बिना Buffering के चलने योग्य होने पर।
+ondurationchange	        Duration Change होने पर।
+onemptied	                Media Empty होने पर।
+onended	                    Media End होने पर।
+onloadeddata	            Media Data Load होने पर।
+onloadedmetadata	        Media Metadata Load होने पर।
+onloadstart	                Media Loading Start होने पर।
+onpause	                    Media Pause होने पर।
+onplay	                    Media Play Start होने पर।
+onplaying	                Media वास्तव में Play होने पर।
+onprogress	                Media Download Progress पर।
+onratechange	            Playback Speed Change होने पर।
+onseeking	                User Seek करने पर।
+onseeked                    (seekend equivalent)	Seeking Complete होने पर।
+onstalled	                Media Loading रुक जाने पर।
+onsuspend	                Browser Media Loading Suspend करे तो।
+ontimeupdate	            Current Time Change होने पर।
+onvolumechange	            Volume Change होने पर।
+onwaiting	                Buffering होने पर।
+
+Window / Browser Events
+Event	                    Definition
+onload	                    Page Load Complete होने पर।
+onunload	                Page Unload होने पर।
+onbeforeunload	            Page छोड़ने से पहले।
+onresize	                Window Resize होने पर।
+onscroll	                Page Scroll होने पर।
+ononline	                Internet Connect होने पर।
+onoffline	                Internet Disconnect होने पर।
+onpagehide	                Page Hidden होने पर।
+onpageshow	                Page Visible होने पर।
+onmessage	                Message Receive होने पर।
+onstorage	                LocalStorage Change होने पर।
+onpopstate	                Browser History Change होने पर।
+
+Misc Events
+Event	                    Definition
+onerror	                    Error आने पर Trigger होता है।
+onreadystatechange	        Ready State Change होने पर।
+onhaschange	                URL Hash Change होने पर (पुराना नाम, अब hashchange)।
+onundo	                    Undo Operation होने पर (Deprecated)।
+onredo	                    Redo Operation होने पर (Deprecated)।
+
+Network Events
+Event	                    Definition
+ononline	                Internet Connected।
+onoffline	                Internet Disconnected।
+
+Exam One-Liner
+
+onclick         → Mouse Click
+ondblclick      → Double Click
+onkeydown       → Key Press
+onkeyup         → Key Release
+onchange        → Value Change
+oninput         → Typing
+onfocus         → Focus Gain
+onblur          → Focus Lost
+onsubmit        → Form Submit
+ondragstart     → Drag Start
+ondrop          → Drop Complete
+onplay          → Media Play
+onpause         → Media Pause
+onended         → Media Finished
+onload          → Page Loaded
+onbeforeunload  → Before Leaving Page
+onresize        → Window Resize
+onscroll        → Page Scroll
+ononline        → Internet Connected
+onoffline       → Internet Disconnected
+onerror         → Error Occurred
+
+Code one by one copy paste check it
+
+1. onclick
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="demo()">
+Click Me
+</button>
+
+<script>
+function demo()
+{
+    alert("Button Clicked");
+}
+</script>
+
+</body>
+</html>
+
+
+2. ondblclick
+<!DOCTYPE html>
+<html>
+<body>
+
+<button ondblclick="demo()">
+Double Click
+</button>
+
+<script>
+function demo()
+{
+    alert("Double Click Fired");
+}
+</script>
+
+</body>
+</html>
+
+
+3. onmousedown
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmousedown="demo()"
+style="width:200px;height:100px;background:yellow">
+Press Mouse
+</div>
+
+<script>
+function demo()
+{
+    alert("Mouse Down");
+}
+</script>
+
+</body>
+</html>
+
+
+4. onmouseup
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmouseup="demo()"
+style="width:200px;height:100px;background:skyblue">
+Release Mouse
+</div>
+
+<script>
+function demo()
+{
+    alert("Mouse Up");
+}
+</script>
+
+</body>
+</html>
+
+
+5. onmouseover
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmouseover="demo()"
+style="width:200px;height:100px;background:pink">
+Move Mouse Here
+</div>
+
+<script>
+function demo()
+{
+    alert("Mouse Over");
+}
+</script>
+
+</body>
+</html>
+
+
+6. onmouseout
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmouseout="demo()"
+style="width:200px;height:100px;background:orange">
+Move Mouse Out
+</div>
+
+<script>
+function demo()
+{
+    alert("Mouse Out");
+}
+</script>
+
+</body>
+</html>
+
+
+7. onmousemove
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmousemove="demo()"
+style="width:300px;height:150px;background:lightgreen">
+Move Mouse
+</div>
+
+<script>
+function demo()
+{
+    console.log("Mouse Moving");
+}
+</script>
+
+</body>
+</html>
+
+
+8. onkeydown
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text"
+onkeydown="demo()">
+
+<script>
+function demo()
+{
+    console.log("Key Down");
+}
+</script>
+
+</body>
+</html>
+
+
+9. onkeypress
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text"
+onkeypress="demo()">
+
+<script>
+function demo()
+{
+    console.log("Key Press");
+}
+</script>
+
+</body>
+</html>
+
+
+10. onkeyup
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text"
+onkeyup="demo()">
+
+<script>
+function demo()
+{
+    console.log("Key Up");
+}
+</script>
+
+</body>
+</html>
+
+
+11. onfocus
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text"
+onfocus="demo()">
+
+<script>
+function demo()
+{
+    alert("Input Focused");
+}
+</script>
+
+</body>
+</html>
+
+
+12. onblur
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text"
+onblur="demo()">
+
+<script>
+function demo()
+{
+    alert("Focus Lost");
+}
+</script>
+
+</body>
+</html>
+
+
+13. onchange
+<!DOCTYPE html>
+<html>
+<body>
+
+<select onchange="demo()">
+
+<option>Java</option>
+<option>Python</option>
+<option>JavaScript</option>
+
+</select>
+
+<script>
+function demo()
+{
+    alert("Value Changed");
+}
+</script>
+
+</body>
+</html>
+
+
+14. oninput
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text"
+oninput="demo()">
+
+<script>
+function demo()
+{
+    console.log("Typing...");
+}
+</script>
+
+</body>
+</html>
+
+
+15. onsubmit
+<!DOCTYPE html>
+<html>
+<body>
+
+<form onsubmit="return demo()">
+
+<input type="text">
+
+<input type="submit">
+
+</form>
+
+<script>
+function demo()
+{
+    alert("Form Submitted");
+    return false;
+}
+</script>
+
+</body>
+</html>
+
+
+16. onload
+<!DOCTYPE html>
+<html>
+
+<body onload="demo()">
+
+<script>
+
+function demo()
+{
+    alert("Page Loaded");
+}
+
+</script>
+
+</body>
+</html>
+
+
+17. onresize
+<!DOCTYPE html>
+<html>
+
+<body onresize="demo()">
+
+<script>
+
+function demo()
+{
+    console.log("Window Resized");
+}
+
+</script>
+
+</body>
+</html>
+
+
+18. onscroll
+<!DOCTYPE html>
+<html>
+
+<body onscroll="demo()">
+
+<div style="height:2000px">
+Scroll Page
+</div>
+
+<script>
+
+function demo()
+{
+    console.log("Scrolling");
+}
+
+</script>
+
+</body>
+</html>
+
+
+19. ononline
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+window.addEventListener("online",function()
+{
+    alert("Internet Connected");
+});
+
+</script>
+
+</body>
+</html>
+
+
+20. onoffline
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+window.addEventListener("offline",function()
+{
+    alert("Internet Disconnected");
+});
+
+</script>
+
+</body>
+</html>
+
+
+
+
+(Drag & Drop + Mouse Wheel + Context Menu + Browser Events)
+
+21. oncontextmenu
+
+Right Click करने पर Trigger होता है।
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div oncontextmenu="demo();return false;"
+style="width:250px;height:100px;background:yellow">
+
+Right Click Here
+
+</div>
+
+<script>
+
+function demo()
+{
+    alert("Right Click Detected");
+}
+
+</script>
+
+</body>
+</html>
+
+
+22. onmousewheel
+Definition
+
+Mouse Wheel Scroll होने पर Trigger होता है।
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmousewheel="demo()"
+style="width:300px;height:200px;background:lightblue">
+
+Scroll Mouse Wheel Here
+
+</div>
+
+<script>
+
+function demo()
+{
+    console.log("Mouse Wheel Used");
+}
+
+</script>
+
+</body>
+</html>
+
+
+23. ondrag
+<!DOCTYPE html>
+<html>
+<body>
+
+<p draggable="true" ondrag="demo()">
+
+Drag Me
+
+</p>
+
+<script>
+
+function demo()
+{
+    console.log("Dragging");
+}
+
+</script>
+
+</body>
+</html>
+
+
+24. ondragstart
+<!DOCTYPE html>
+<html>
+<body>
+
+<p draggable="true" ondragstart="demo()">
+
+Drag Start
+
+</p>
+
+<script>
+
+function demo()
+{
+    alert("Drag Started");
+}
+
+</script>
+
+</body>
+</html>
+
+
+25. ondragend
+<!DOCTYPE html>
+<html>
+<body>
+
+<p draggable="true" ondragend="demo()">
+
+Drag End
+
+</p>
+
+<script>
+
+function demo()
+{
+    alert("Drag Ended");
+}
+
+</script>
+
+</body>
+</html>
+
+
+26. ondragenter
+<!DOCTYPE html>
+<html>
+<body>
+
+<div ondragenter="demo()"
+style="width:200px;height:150px;border:2px solid">
+
+Drop Area
+
+</div>
+
+<script>
+
+function demo()
+{
+    alert("Drag Enter");
+}
+
+</script>
+
+</body>
+</html>
+
+
+27. ondragleave
+<!DOCTYPE html>
+<html>
+<body>
+
+<div ondragleave="demo()"
+style="width:200px;height:150px;border:2px solid">
+
+Drag Leave
+
+</div>
+
+<script>
+
+function demo()
+{
+    alert("Drag Leave");
+}
+
+</script>
+
+</body>
+</html>
+
+
+28. ondragover
+<!DOCTYPE html>
+<html>
+<body>
+
+<div ondragover="demo()"
+style="width:200px;height:150px;border:2px solid">
+
+Drag Over
+
+</div>
+
+<script>
+
+function demo()
+{
+    console.log("Dragging Over");
+}
+
+</script>
+
+</body>
+</html>
+
+
+29. ondrop
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="drag1"
+draggable="true"
+ondragstart="drag(event)">
+Drag Me
+</p>
+
+<div
+ondrop="drop(event)"
+ondragover="allow(event)"
+style="width:200px;height:200px;border:2px solid">
+</div>
+
+<script>
+
+function allow(ev)
+{
+    ev.preventDefault();
+}
+
+function drag(ev)
+{
+    ev.dataTransfer.setData("text",ev.target.id);
+}
+
+function drop(ev)
+{
+    ev.preventDefault();
+
+    var data=
+    ev.dataTransfer.getData("text");
+
+    ev.target.appendChild(
+    document.getElementById(data));
+
+    alert("Dropped");
+}
+
+</script>
+
+</body>
+</html>
+
+
+30. onpagehide
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+window.onpagehide=function()
+{
+    console.log("Page Hidden");
+}
+
+</script>
+
+</body>
+</html>
+
+
+31. onpageshow
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+window.onpageshow=function()
+{
+    alert("Page Visible");
+}
+
+</script>
+
+</body>
+</html>
+
+
+32. onstorage
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="saveData()">
+
+Save
+
+</button>
+
+<script>
+
+function saveData()
+{
+    localStorage.setItem("name","Adil");
+}
+
+window.onstorage=function()
+{
+    alert("Storage Changed");
+}
+
+</script>
+
+</body>
+</html>
+
+
+33. onpopstate
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="history.pushState({},'', '?page=2')">
+
+Next Page
+
+</button>
+
+<script>
+
+window.onpopstate=function()
+{
+    alert("History Changed");
+}
+
+</script>
+
+</body>
+</html>
+
+
+34. onmessage
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+window.onmessage=function(event)
+{
+    alert(event.data);
+}
+
+window.postMessage(
+"Hello Message Event",
+"*"
+);
+
+</script>
+
+</body>
+</html>
+
+
+35. onerror
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="wrong.jpg"
+onerror="demo()">
+
+<script>
+
+function demo()
+{
+    alert("Image Not Found");
+}
+
+</script>
+
+</body>
+</html>
+
+
+36. onreadystatechange
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+document.onreadystatechange=function()
+{
+    console.log(
+    document.readyState
+    );
+}
+
+</script>
+
+</body>
+</html>
+
+
+Part-3 (Media Events)
+37. onplay
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls onplay="demo()">
+
+<source src="song.mp3">
+
+</audio>
+
+<script>
+
+function demo()
+{
+    alert("Audio Started");
+}
+
+</script>
+
+</body>
+</html>
+
+
+38. onpause
+<!DOCTYPE html>
+<html>
+<body>
+
+<audio controls onpause="demo()">
+
+<source src="song.mp3">
+
+</audio>
+
+<script>
+
+function demo()
+{
+    alert("Audio Paused");
+}
+
+</script>
+
+</body>
+</html>
+
+
+39. onended
+<audio controls onended="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Audio Ended");
+}
+</script>
+40. onvolumechange
+<audio controls onvolumechange="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Volume Changed");
+}
+</script>
+41. onplaying
+<audio controls onplaying="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Audio Playing");
+}
+</script>
+42. onwaiting
+<audio controls onwaiting="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Buffering...");
+}
+</script>
+43. oncanplay
+<audio controls oncanplay="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Ready To Play");
+}
+</script>
+44. oncanplaythrough
+<audio controls oncanplaythrough="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Can Play Complete");
+}
+</script>
+45. ondurationchange
+<audio controls ondurationchange="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Duration Changed");
+}
+</script>
+46. onemptied
+<audio controls onemptied="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Media Emptied");
+}
+</script>
+47. onloadeddata
+<audio controls onloadeddata="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Data Loaded");
+}
+</script>
+48. onloadedmetadata
+<audio controls onloadedmetadata="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Metadata Loaded");
+}
+</script>
+49. onloadstart
+<audio controls onloadstart="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Loading Started");
+}
+</script>
+50. onprogress
+<audio controls onprogress="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+console.log("Loading Progress");
+}
+</script>
+51. onratechange
+<audio controls onratechange="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Speed Changed");
+}
+</script>
+52. onseeking
+<audio controls onseeking="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Seeking");
+}
+</script>
+53. onsuspend
+<audio controls onsuspend="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Loading Suspended");
+}
+</script>
+54. ontimeupdate
+<audio controls ontimeupdate="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+console.log("Time Updated");
+}
+</script>
+55. onstalled
+<audio controls onstalled="demo()">
+<source src="song.mp3">
+</audio>
+
+<script>
+function demo()
+{
+alert("Loading Stalled");
+}
+</script>
